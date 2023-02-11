@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tabela HTml</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Tabela Html</h1>
+   
+   <p>Para criar uma tabela começamos pela tag <mark>&lt;table>&lt;/table></mark></p>
+   
+   <p>Para criar uma linha na tabela usamos a tag <mark>&lt;tr>&lt;/tr></mark> (table row)</p>
+   
+   <p>Dentro da tag table row usamos a tag <mark>&lt;th>&lt;/th></mark> (table head) para o nome do cabeçalho.</p>
+   
+   <p>Dentro da tag table row usamos a tag <mark>&lt;td>&lt;/td></mark> (table data) para os dados.</p>   
+   <pre>
+      Exemplo
+      &lt;table>
+         &lt;caption>HTml TABLE TAGS RESUmE&lt;/caption>
+         &lt;tr>
+            &lt;th>Tag&lt;/th>
+            &lt;th>Descriptian&lt;/th>
+         &lt;/tr>
+         &lt;tr>
+            &lt;td>&lt;table>&lt;/td>
+            &lt;td>it difines a table.&lt;/td>
+         &lt;/tr>
+         &lt;tr>
+            &lt;td>&lt;tr>&lt;/td>
+            &lt;td>it defines a row in a table.&lt;/td>
+         &lt;/tr>
+         &lt;tr>
+            &lt;td>&lt;th>&lt;/td>
+            &lt;td>is defines a heder cell in a table.&lt;/td>
+         &lt;/tr>
+         &lt;tr>
+            &lt;td>&lt;td>&lt;/td>
+            &lt;td>is defines a cell in a table.&lt;/td>
+         &lt;/tr>
+         &lt;tr>
+            &lt;td>&lt;captino>&lt;/td>
+            &lt;td>it difines the table caption.&lt;/td>
+         &lt;/tr>
+      &lt;/table>
+   </pre>
+   <hr>
+
+   <!--CRIANDO A TABELA RESUmO DAS TAGS HTmL PARA CRIAÇÃO DE UmA TABELA-->
+   <p>Resumo das tags HTml para criar uma tabela.</p>
+   
+   <table>
+      <caption>HTml TABLE TAGS RESUmE</caption>
+      <tr> <!--FRIST LINE-->
+         <th>Tag</th>
+         <th>Descriptian</th>
+      </tr>
+      <tr> <!--SECOND LINE-->
+         <td>&lt;table>
+         <td>it difines a table.
+      </tr>
+      <tr> <!--THIRD LINE-->
+         <td>table row &lt;tr>
+         <td>it defines a row in a table.
+      </tr>
+      <tr> 
+         <td>table head&lt;th>
+         <td>is defines a heder cell in a table.
+      </tr>
+      <tr>
+         <td>table data &lt;td>
+         <td>is defines a cell in a table.
+      </tr>
+      <tr>
+         <td>&lt;caption></td>
+         <td>it difines the table caption.</td>
+      </tr>
+      <tr>
+         <td>&lt;colgroup></td>
+         <td>is specifies a group of one or more columns in a table for formatting.</td>
+      </tr>
+      <tr>
+         <td>columns &lt;col></td>
+         <td>it is used with &lt;colgroup> element to specify column properties for eath column.</td>
+      </tr>
+      <tr>
+         <td>tbody</td>
+         <td>is used to group the body content in a table.</td>
+      </tr>
+      <tr>
+         <td>thead</td>
+         <td>is used to group the head content in a table.</td>
+      </tr>
+      <tr>
+         <td>tfoot</td>
+         <td>is used to group the foot content in a table.</td>
+      </tr>
+   </table>
+   <hr>
+
+   <h2>Tabela HTML com Estilo CSS</h2>
+
+   <p>Para adicionar uma borda na tabela, use a propriedade CSS <mark>border</mark>;</p>
+   <pre>
+   table, th, td {
+      <strong><mark>border</mark>: 1px solid black;</strong>
+   } </pre>
+
+   <p>Para evitar bordas duplas, defina a propriedade CSS: <strong><mark>border-collapse</mark>: como <mark>collapse</mark></strong></p>
+   <pre>
+   table, th, td {
+      <strong><mark>border</mark> 1px solid black;</strong>
+      <strong><mark>border-collapse</mark> collapse;</strong>
+   }</pre>
+
+   <p>Se você definir uma cor de plano de fundo de cada célula, e dê à borda uma cor branca, você tem a impressão de uma borda invisível:</p>
+   <pre>
+   table, th, td {
+      <strong><mark>border</mark> 1px solid white;</strong>
+      <strong><mark>border-collapse</mark> collapse;</strong>
+   }
+   th, td {
+      <strong><mark>background-color</mark> # 96D4D4;</strong>
+   }</pre>
+
+   <p>Com a propriedade CSS <mark>border-radius</mark>, as bordas ficam arredondadas pelos cantos:</p>
+   <pre>
+   table, th, td {
+      <strong><mark>border</mark> 1px solid black;</strong>
+      <strong><mark>border-radius</mark> 10px;</strong>
+   } </pre>
+
+   <p>Com a propriedade <mark>border-style</mark>, você pode definir o aparência da borda.</p>
+   <pre>
+   th, td {
+      <strong><mark>border-style</mark> dotted;</strong>
+   }</pre>
+
+   <p>Com a propriedade <mark>border-color</mark>, você pode definir a cor da borda.</p>
+   <pre>
+   th, td {
+      <strong><mark>border-color</mark> # 96D4D4;</strong>
+      }</pre>
+
+</body>
+</html>
