@@ -1,0 +1,46 @@
+
+   body {
+      background-color: rgb(61, 61, 226);
+      color: white;
+   }
+   h1, h2, h3 {
+      text-align: center;
+   }
+   p {
+      font-family: Arial;
+      font-size: 15pt;
+      margin-left: 80px;
+      margin-right: 80px;
+   }
+   pre {
+      background-color: rgb(226, 221, 214);
+      color: blue;
+      font-size: 15pt;
+      font-family: 'Arial';
+   }
+   strong {
+      background-color: white;
+      color: black;
+   }
+   mark {
+      background-color: rgb(255, 255, 255);
+      color: red;
+   }
+   code {
+      background-color: yellow;
+      color: black;
+   }
+   table {
+      background-color: rgb(139, 197, 210);
+      color: black;
+      font-size: 20pt;
+      border-collapse: collapse;
+      width: 100%;
+   }
+   caption {
+      background-color: yellow;
+   }
+   tr,th, td {
+      border: 1px solid black;
+      padding: 10px;  
+   }
