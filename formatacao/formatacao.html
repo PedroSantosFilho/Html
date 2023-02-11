@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formatação de texto HTML</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h1>Formatação de texto HTML</h1>
+   
+   <p>HTML contém vários elementos para definir o texto com um significado especial.</p>
+
+   <h2>Elementos de formatação HTML</h2>
+
+   <p>Os elementos de formatação foram projetados para exibir tipos especiais de texto:
+   <ul>
+      <li><mark>&lt;b></mark> - Texto em negrito</li>
+      <li><mark>&lt;strong></mark> - Texto importante</li>
+      <li><mark>&lt;i></mark> - Texto em itálico</li>
+      <li><mark>&lt;em></mark> - Texto enfatizado</li>
+      <li><mark>&lt;mark></mark> - Texto marcado</li>
+      <li><mark>&lt;small></mark> - Texto menor</li>
+      <li><mark>&lt;del></mark> - Texto excluído</li>
+      <li><mark>&lt;ins></mark> - Texto inserido</li>
+      <li><mark>&lt;sub></mark> - Texto subscrito</li>
+      <li><mark>&lt;sup></mark> - Texto sobrescrito</li>
+   </ul>
+   <hr>
+
+   <h2>Elementos HTML <mark>&lt;b></mark> e <mark>&lt;strong></mark></h2>
+
+   <p>O elemento HTML <mark>&lt;b></mark> define o texto em negrito, sem qualquer importância extra.</p>
+   <pre>
+   Exemplo
+   <mark>&lt;p></mark><mark>&lt;b></mark>Este texto está em negrito.<mark>&lt;/b></mark><mark>&lt;/p></mark></pre>
+
+   <p>Resultado do Programa Acima</p>
+   <p><b>Este texto está em negrito.</b></p>
+   <hr>
+   
+   <p>O elemento HTML <mark>&lt;strong></mark> define o texto com forte importância. <br> O conteúdo interno é normalmente exibido em negrito.</p>
+   <pre>
+   Exemplo
+   <mark>&lt;p></mark><mark>&lt;strong></mark>Este texto é importante<mark>&lt;/strong></mark><mark>&lt;/p></mark></pre>
+
+   <p>Resultado do Programa Acima.</p>
+
+   <p><strong>Este texto é importante</strong></p>
+   <hr>
+
+   <h2>Elementos HTML <mark>&lt;i></mark> e <mark>&lt;em></mark></h2>
+
+   <p>O elemento HTML <mark>&lt;i></mark>> define uma parte de texto em uma voz ou humor alternativo. <br> O conteúdo interno é normalmente exibido em itálico.</p>
+   
+   <p><strong>Nota:</strong> A tag é frequentemente usada para indicar um termo técnico, uma frase de outra língua, um pensamento, um nome de navio, etc.</p>
+   <pre>
+   Exemplo
+   <mark>&lt;p></mark><mark>&lt;i></mark>Este texto está em italico.<mark>&lt;/i></mark><mark>&lt;/p></mark></pre>
+
+   <p>Resultado do Exemplo Acima.</p>
+   <p><i>Este texto está em italico.</i></p>
+   <hr>
+
+   <p>O elemento HTML <mark>&lt;em></mark> define texto enfatizado. O conteúdo interno é normalmente exibido em itálico.</p>
+   
+   <p><strong>Nota:</strong>Um leitor de tela pronunciará as palavras com ênfase.</p>
+   <pre>
+   Exemplo
+   <mark>&lt;p></mark><mark>&lt;em></mark>Este texto está enfatizado.<mark>&lt;/em></mark><mark>&lt;/p></mark></pre>
+
+   <p>Resultado do Exemplo Acima.</p>
+   <p><em>Este texto está enfatizado.</em></p>
+   <hr>
+
+   <h2>Elemento HTML <mark>&lt;small></mark></h2>
+   
+   <p>O elemento HTML <mark>&lt;small></mark> define texto menor:</p>
+   <pre>
+   Exemplo
+   <mark>&lt;p></mark>Este é um texto normal.<mark>&lt;/p></mark>
+   <mark>&lt;p></mark><mark>&lt;small></mark>Este é um texto menor.<mark>&lt;/small></mark><mark>&lt;/p></mark></pre>
+
+   <p>Resultado do Exemplo Acima.</p>
+   <p>Este é um texto normal.</p>
+   <p><small>Este é um texto menor.</small></p>
+   <hr>
+
+   <h2>Elemento HTML<mark>&lt;mark></mark></h2>
+
+   <p>O elemento HTML <mark>&lt;mark></mark> define o texto, ou os textos que devem ser marcados ou destacados:</p>
+   <pre>
+   Exemplo
+   <mark>&lt;p></mark>Não se esqueça de comprar o <mark>&lt;mark></mark>leite<mark>&lt;/mark></mark> hoje.<mark>&lt;/p></mark></pre>
+
+   <p>Resultado do Exemplo Acima.</p>
+   <p>Não se esqueça de comprar o 
+      <mark>leite</mark> hoje.</p>
+   <hr>
+
+   <h2>Elemento HTML <mark>&lt;del></mark></h2>
+
+   <p>O elemento HTML <mark>&lt;del></mark> define o texto que foi excluído de um documento.</p>
+   
+   <p>Os navegadores geralmente atingem uma linha através de texto suprimido:</p>
+   <pre>
+   Exemplo
+      <mark>&lt;p></mark>Minha cor bavorita é <mark>&lt;del></mark>azul<mark>&lt;/del></mark> red.<mark>&lt;/p></mark></pre>
+
+   <p>Resultado:</p>
+   
+   <p>Minha cor bavorita é <mark><del>azul</del></mark> red.</p>
+   <hr>
+
+   <h2>Elemento HTML <mark>&lt;ins></mark></h2>
+
+   <p>O elemento HTML <mark>&lt;ins></mark> define um texto que foi inserido em um documento.</p>
+      
+   <p>Os navegadores geralmente sublinham  inserido Texto:</p>
+   
+   <pre>
+   Exemplo
+   <mark>&lt;p></mark>Minha cor favorita é <mark>&lt;del></mark>azul<mark>&lt;/del></mark> <mark>&lt;ins></mark>vermelha<mark>&lt;/ins>.<mark>&lt;/p></mark></pre>
+   
+   <p>Resultado:</p>
+
+   <p>Minha cor favorita é <del>azul</del>  <ins>vermelha</ins>. <br> Azul ficou <mark><del>riscado</del></mark> e vermelha <mark><ins>sublinhado</ins></mark>.</p>
+   <hr>
+   
+   <h2>Elemento HTML <mark>&lt;sub></mark></h2>
+
+   <p>O elemento HTML <mark>&lt;sub></mark> define texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal, e às vezes é renderizado em uma fonte menor. O texto subscrito pode ser usado para fórmulas químicas, como H<sub>2O:</p>
+   
+   <pre>
+   Exemplo
+      <mark>&lt;p></mark>Este Texto será <mark>&lt;sub></mark> subscrito<mark>&lt;/sub></mark>.</p></pre>
+
+   <p>Resultado:</p>
+
+   <p>Este Texto será <sub> subscrito</sub></p>
+   <hr>
+
+   <h2>Elemento HTML <mark>&lt;sup></mark></h2>
+   
+   <p>O elemento HTML <mark>&lt;sup></mark> define texto sobrescrito. O texto sobrescrito aparece meio caractere acima do normal e, às vezes, é renderizado em uma fonte menor. Texto sobrescrito pode ser usado para notas de rodapé, como WWW<sup>[1]:</p>
+   
+   <pre>
+   Exemplo
+      <mark>&lt;p></mark>Este é um texto <mark>&lt;sup></mark>subrescrito<mark>&lt;/sup></mark>.<mark>&lt;/p></mark></pre>
+
+   <p>Resultado:</p>
+   <p>Este é um texto <sup>subrescrito</sup>.</p>
+   <hr>
+
+</body>
+</html>
