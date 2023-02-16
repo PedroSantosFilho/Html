@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bordas Da Tabela</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h1>Bordas Da Tabela HTML</h1>
+   
+   <p>As tabelas HTML podem ter bordas de estilos e formas diferentes.</p>
+
+   <h2>Como adicionar uma borda</h2>
+
+   <p>Ao adicionar uma borda a uma tabela, você também adiciona bordas ao redor de cada célula da tabela:</p>        
+         
+   <p>Para adicionar uma borda, use as propriedades CSS, e elementos:<mark>border</mark>, <mark>table</mark>, <mark>th</mark>, <mark>td</mark></p>
+   <pre>
+   Exemplo
+      <mark>table, th, td</mark> {
+         <mark>border</mark> 1px solid black;
+      }</pre>
+   <hr>
+
+   <h2>Bordas da tabela recolhidas</h2>
+
+   <p>Para evitar bordas duplas, defina a propriedade CSS como. <mark>border-collapse: collapse</mark></p>
+
+   <p>Isso fará com que as bordas colapsem em uma única borda:</p>        
+   <pre>
+   Exemplo
+   <mark>table, th, td</mark> {
+      <mark>border</mark> 1px solid black;
+      <mark>border-collapse</mark> collapse;
+   }
+   </pre>
+   <hr>
+
+   <h2>Cor das Bordas da tabela</h2>
+
+   <p>Se você definir uma cor de plano de fundo de cada célula, e dê à borda uma cor branca (a mesma que o plano de fundo do documento), você tem a impressão de uma borda invisível:</p>
+   <pre>
+   Exemplo
+   <mark>table, th, td</mark> {
+      <mark>border</mark> 1px solid white;
+      <mark>border-collapse</mark> collapse;
+   }
+   <mark>th, td</mark> {
+      <mark>background-color</mark> #96D4D4;
+   }</pre>
+   <hr>
+
+</body>
+</html>
