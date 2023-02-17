@@ -27,7 +27,7 @@
 
    <h2>Bordas da tabela recolhidas</h2>
 
-   <p>Para evitar bordas duplas, defina a propriedade CSS como. <mark>border-collapse: collapse</mark></p>
+   <p>Para evitar bordas duplas, defina a propriedade CSS como. <br><mark>border-collapse: collapse</mark></p>
 
    <p>Isso fará com que as bordas colapsem em uma única borda:</p>        
    <pre>
@@ -35,8 +35,7 @@
    <mark>table, th, td</mark> {
       <mark>border</mark> 1px solid black;
       <mark>border-collapse</mark> collapse;
-   }
-   </pre>
+   } </pre>
    <hr>
 
    <h2>Cor das Bordas da tabela</h2>
@@ -52,6 +51,36 @@
       <mark>background-color</mark> #96D4D4;
    }</pre>
    <hr>
+
+   <h2>Aredondando As Bordas da Tabela</h2>
+
+   <p>Com a propriedade <mark>border-radius</mark>, as bordas ficam arredondadas pelos cantos:</p>
+   <pre>         
+   Exemplo
+   table, th, td {
+      <mark>border</mark> : 1px solid black;
+      <mark>border-radius</mark> : 10px;
+   }</pre>
+
+   <p>Para ignora a borda ao redor da tabela deixe de fora do seletor css: <br><mark>table</mark></p>
+   <pre>         
+   Exemplo
+   th, td {
+      <mark>border</mark> : 1px solid black;
+      <mark>border-radius</mark> : 10px;
+   }</pre>
+   <hr>
+
+   <h2>Cor da borda</h2>
+
+   <p>Com a propriedade <mark>border-color</mark>, você pode definir a cor da borda.</p>
+   <pre>
+   Exemplo
+    th, td {
+      <mark>border-color</mark>: #96D4D4;
+   }</pre>
+   <hr>
+
 
 </body>
 </html>
