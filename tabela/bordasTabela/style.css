@@ -40,12 +40,13 @@
       margin-right: 400pt;
    }
    b {
-      background-color: white;
+     /* background-color: white;*/
       color: rgb(206, 62, 182);
    }
    table {
       background-color: white;
-      color: black;       
+      color: black; 
+      width: 100%;      
    }
    caption {
       background-color: yellow;
@@ -59,5 +60,4 @@
       padding: 5pt 5pt 5pt 5pt;
       border: 1pt solid black;
       border-collapse: collapse;
-      width: 10%;
    }
