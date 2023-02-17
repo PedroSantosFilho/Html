@@ -43,20 +43,21 @@
       background-color: white;
       color: rgb(206, 62, 182);
    }
-   table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
+   table {
+      
       background-color: white;
       color: black;       
       margin-left: 80pt;
-      }
-      caption {
+   }
+   caption {
       background-color: yellow;
       color: black;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 18pt;
       padding: 5pt 5pt 5pt 5pt;
-      }
-      th, td {
+   }
+   th, td {
       font-size: 18pt;
-      }
+      border: 1px solid black;
+      border-collapse: collapse;
+   }
