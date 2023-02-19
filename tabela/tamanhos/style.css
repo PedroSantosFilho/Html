@@ -17,7 +17,7 @@ pre {
    color: blue;
    font-size: 15pt;
    font-family: 'Arial';
-   margin-left: 80px;
+   margin-left: 100px;
    margin-right: 300px;
 }
 strong {
@@ -44,9 +44,9 @@ b {
    color: rgb(206, 62, 182);
 }
 table {
-   background-color: white;
-   color: black; 
-   width: 100%;      
+   background-color: white; /* Cor do fundo branca */
+   color: black;    /* Cor das letras preta */
+   width: 100%;     /* largura da tabela 100% */
 }
 caption {
    background-color: yellow;
