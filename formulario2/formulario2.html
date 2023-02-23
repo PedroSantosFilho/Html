@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formulário HTML</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h1>Formulários HTML</h1>
+
+   <p>Um formulário HTML é usado para coletar a entrada do usuário. A entrada do usuário é na maioria das vezes enviado para um servidor para processamento.</p>
+
+   <h2>O elemento &lt;<mark>form</mark>></h2>
+
+   <p>O elemento HTML &lt;<mark>form</mark>> é usado para criar um formulário HTML para entrada do usuário:</p>
+
+   <pre>
+      Sintaxe
+      &lt;<mark>form</mark>>
+         Aqui colocar os 
+         elementos do 
+         formulário
+      &lt;<mark>form</mark>></pre>
+
+   <p>O elemento &lt;<mark>form</mark>> é um contêiner para diferentes tipos de elementos de entrada, tais como: campos de texto, caixas de seleção, rádio botões, botões de envio, etc.</p>
+   <hr>
+
+   <h2>O elemento &lt;<mark>input</mark>></h2>
+   
+   <p>O elemento HTML &lt;<mark>input</mark>> é o elemento mais usado no formulário.</p>
+
+   <p>Um elemento &lt;<mark>input</mark>> pode ser exibido de muitas maneiras, dependendo do atributo &lt;<mark>type</mark>>.</p>
+
+   <table>
+      <caption>Aqui estão alguns exemplos:</caption>
+      <tr>
+         <td>Tipo</td>
+         <td>Descrição</td>
+      </tr>
+      <tr>
+         <td>&lt;<mark>input</mark>> <strong>type</strong>="<b>text</b>"</td>
+         <td>Exibe um campo de entrada de texto de linha única</td>
+      </tr>
+      <tr>
+         <td>&lt;<mark>input</mark>> <strong>type</strong>="<b>radio</b>"</td>
+         <td>Exibe um botão de opção (para selecionar uma das muitas opções)</td>
+      </tr>
+      <tr>   
+         <td>&lt;<mark>input</mark>> <strong>type</strong>="<b>checkbox</b>"</td>
+         <td>Exibe uma caixa de seleção (para selecionar zero ou mais de muitas opções)</td>
+      </tr>
+      <tr>
+         <td>&lt;<mark>input</mark>> <strong>type</strong>="<b>submit</b>"</td>
+         <td>Exibe um botão de envio (para enviar o formulário)</td>
+      </tr>
+      <tr>      
+         <td>&lt;<mark>input</mark>> <strong>type</strong>="<b>button</b>"</td>
+         <td>Exibe um botão clicável</td>
+      </tr>
+   </table>
+   <hr>
+
+   <h2>Campos de texto</h2>
+
+   <p>O &lt;<mark>input</mark>> <strong>type</strong>="<b>text</b>" define um campo de entrada de linha única para entrada de texto.</p>
+
+   <h3>Exemplo 1</h3>
+
+   <p>Um formulário com campos de entrada para texto:</p>
+   
+   <pre>
+      &lt;<mark>form</mark>>
+         &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+         
+         &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname"</b>> name="fname">&lt;<mark>br</mark>>
+         
+         &lt;<mark>label</mark> <b>for="lname"</b>>Último nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+         
+         &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="lname"</b> name="lname">
+      &lt;<mark>/form</mark>></pre>
+
+   <p id="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
+
+   <p>É assim que o código HTML acima será exibido em um navegador:</p>
+   
+   <form>
+      <label for="fname">Primeiro nome:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Último nome:</label><br>
+      <input type="text" id="lname" name="lname">
+   </form>
+
+   <p><mark>Nota:</mark> A forma em si não é visível. Observe também que a largura padrão de um campo de entrada é de 20 caracteres.</p>
+   <hr>
+
+   <h2>O elemento &lt;<mark>label</mark>></h2>
+
+   <p>Observe o uso do elemento &lt;<mark>label</mark>> no exemplo acima.</p>
+   
+   <p>A tag &lt;<mark>label</mark>> define um rótulo para muitos elementos de formulário.</p>
+   
+   <p>O elemento &lt;<mark>label</mark>> é útil para usuários de leitores de tela, porque o leitor de tela lerá em voz alta o rótulo quando o foco do usuário no elemento de entrada.</p>
+   
+   <p>O elemento &lt;<mark>label</mark>> também ajuda os usuários que têm dificuldade em clicar em regiões muito pequenas (como botões de opção ou caixas de seleção) - porque quando o usuário clica no texto dentro do elemento &lt;<mark>label</mark>>, ele alterna o botão de opção/caixa de seleção.</p>
+   
+</body>
+</html>
