@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Atributo Action da Tag Form</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h1>Atributos do Formulário HTML</h1>
+
+   <h2>O atributo de ação</h2>
+
+   <p>O atributo <strong>action</strong> define a ação a ser executada quando o formulário é enviado.</p>
+
+   <p>Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica no botão enviar.</p>
+
+   <p>No exemplo abaixo, os dados do formulário são enviados para um arquivo chamado <code>"action_page.php"</code>. Este arquivo contém um script do lado do servidor que manipula os dados do formulário:</p>
+
+   <h3>Exemplo</h3>
+
+   <p>Ao enviar, envie os dados do formulário para <code>"action_page.php"</code></p>
+   
+   <pre>
+   &lt;<mark>form</mark> <strong>action</strong>=<code>"/action_page.php"</code>>
+   &lt;<mark>label</mark> for="fname">First name:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+   &lt;<mark>input</mark> type="text" id="fname" name="fname" value="John">&lt;<mark>br</mark>>
+
+   &lt;<mark>label</mark>> for="lname">Last name:&lt;<mark>/label</mark>><br>
+   &lt;<mark>input</mark> type="text" id="lname" name="lname" value="Doe">&lt;<mark>br</mark>>&lt;<mark>br</mark>>
+      
+   &lt;<mark>input</mark> type="submit" value="Submit">
+   &lt;<mark>/form</mark>></pre>
+   
+   <p><mark>Dica:</mark> Se o actionatributo for omitido, a ação será definida para a página atual.</p>
+   <hr>
+     
+</body>
+</html>
