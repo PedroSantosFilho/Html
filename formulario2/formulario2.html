@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -75,11 +75,11 @@
    &lt;<mark>form</mark>>
       &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
       
-      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname"</b>> name="fname">&lt;<mark>br</mark>>
+      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname"</b>> name="fname" value="Pedro">&lt;<mark>br</mark>>
       
       &lt;<mark>label</mark> <b>for="lname"</b>>Último nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
       
-      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="lname"</b> name="lname">
+      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="lname"</b> name="lname" value="Filho">
    &lt;<mark>/form</mark>></pre>
 
    <p id="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
@@ -88,9 +88,9 @@
    
    <form>
       <label for="fname">Primeiro nome:</label><br>
-      <input type="text" id="fname" name="fname"><br>
+      <input type="text" id="fname" name="fname" value="Pedro"><br>
       <label for="lname">Último nome:</label><br>
-      <input type="text" id="lname" name="lname">
+      <input type="text" id="lname" name="lname" value="Filho">
    </form>
 
    <p><mark>Nota:</mark> A forma em si não é visível. Observe também que a largura padrão de um campo de entrada é de 20 caracteres.</p>
@@ -191,7 +191,7 @@
 
    <p>O manipulador de formulário geralmente é um arquivo no servidor com um script para processar dados de entrada.</p>
 
-   <p>O manipulador de formulário é especificado no action atributo do formulário.</p>
+   <p>O manipulador de formulário é especificado no atributo <strong>action</strong> do formulário.</p>
 
    <h3>Exemplo</h3>
 
@@ -222,6 +222,39 @@
       <input type="text" id="lname" name="lname" value="Doe"><br><br>
       <input type="submit" value="Submit">
    </form>
+   <hr>
+
+   <h2>O atributo <strong>name</strong> para elemento &lt;<mark>input</mark>></h2>
+
+   <p>Observe que cada campo de entrada deve ter um atributo a ser enviado.</p>
+
+   <p>Se o atributo &lt;<mark>Name</mark> for omitido, o valor do campo de entrada &lt;<mark>input</mark> não será enviado.</p>
    
+   <h3>Exemplo</h3>
+
+   <p>Se você clicar no botão <strong>"Enviar"</strong>, os dados do formulário serão enviados para uma página chamada <code>"/action_page.php"</code>.</p>
+
+   <p>Observe que o valor do campo <mark>"Nome"</mark> não será enviado, porque o elemento de entrada &lt;<mark>input</mark> não tem um atributo <mark>name</mark>.</p>
+
+   <pre>
+   &lt;<mark>form</mark> <code>action="/action_page.php"</code>>
+      &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+      
+      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname"</b> value="Pedro">&lt;<mark>br</mark>>&lt;<mark>br</mark>>
+      
+      &lt;<mark>input</mark> <strong>type="submit"</strong> value="Submit">
+   &lt;<mark>/form</mark>></pre>
+
+   <p>Resultado do programa acima</p>
+
+   <form action="/action_page.php">
+      <label for="fname">Primeiro nome:</label><br>
+
+      <input type="text" id="fname" value="Pedro"><br><br>
+
+      <input type="submit" value="Submit">
+   </form>
+   <hr>
+
 </body>
 </html>
