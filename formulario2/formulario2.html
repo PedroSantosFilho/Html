@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Formulário HTML</title>
+   <title>Formulários HTML</title>
    <link rel="stylesheet" href="style.css">
 
 </head>
@@ -72,15 +72,15 @@
    <p>Um formulário com campos de entrada para texto:</p>
    
    <pre>
-      &lt;<mark>form</mark>>
-         &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
-         
-         &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname"</b>> name="fname">&lt;<mark>br</mark>>
-         
-         &lt;<mark>label</mark> <b>for="lname"</b>>Último nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
-         
-         &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="lname"</b> name="lname">
-      &lt;<mark>/form</mark>></pre>
+   &lt;<mark>form</mark>>
+      &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+      
+      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname"</b>> name="fname">&lt;<mark>br</mark>>
+      
+      &lt;<mark>label</mark> <b>for="lname"</b>>Último nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+      
+      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="lname"</b> name="lname">
+   &lt;<mark>/form</mark>></pre>
 
    <p id="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
 
@@ -105,6 +105,123 @@
    <p>O elemento &lt;<mark>label</mark>> é útil para usuários de leitores de tela, porque o leitor de tela lerá em voz alta o rótulo quando o foco do usuário no elemento de entrada.</p>
    
    <p>O elemento &lt;<mark>label</mark>> também ajuda os usuários que têm dificuldade em clicar em regiões muito pequenas (como botões de opção ou caixas de seleção) - porque quando o usuário clica no texto dentro do elemento &lt;<mark>label</mark>>, ele alterna o botão de opção/caixa de seleção.</p>
+   <hr>
+
+   <h2>Botões do rádio</h2>
+
+   <p>O &lt;<mark>input</mark> <strong>type="radio"</strong>> define um botão de rádio.</p>
+
+   <p>Os botões de opção permitem que um usuário selecione UMA dentre um número limitado de opções.</p>
+
+   <h3>Exemplo</h3>
+
+   <p>Um formulário com botões de rádio:</p>
+
+   <p>Escolha o seu idioma Web favorito:</p>
+
+   <pre>
+   &lt;<mark>form</mark>>
+      &lt;<mark>input</mark> <strong>type="radio"</strong>> <b>id="html"</b> name="fav_language" value="HTML">
+      &lt;<mark>label</mark> <b>for="html"</b>>HTML&lt;<mark>/label</mark>><br>
+      &lt;<mark>input</mark> <strong>type="radio"</strong>> <b>id="css"</b> name="fav_language" value="CSS">
+      &lt;<mark>label</mark> <b>for="css"</b>>CSS&lt;<mark>/label</mark>><br>
+      &lt;<mark>input</mark> <strong>type="radio"</strong>> <b>id="javascript"</b> name="fav_language" value="JavaScript">
+      &lt;<mark>label</mark> <b>for="javascript"</b>>JavaScript&lt;<mark>/label</mark>>
+   &lt;<mark>/form</mark>></pre>
+
+   <p id="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
+
+   <p>É assim que o código HTML acima será exibido em um navegador:</p>
+
+   <p>Escolha o seu idioma Web favorito:</p>
+   
+   <form>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+   </form>
+   <hr>
+
+   <h2>Caixas de seleção</h2>
+
+   <p>O &lt;<mark>input</mark> <strong>type="checkbox"</strong>> define uma <strong>caixa de seleção</strong>.</p>
+
+   <p>As caixas de seleção permitem que um usuário selecione ZERO ou MAIS opções de um número limitado de opções.</p>
+
+   <h3>Exemplo</h3>
+
+   <p>Um formulário com caixas de seleção:</p>
+   
+   <pre>
+   &lt;<mark>form</mark>>
+      &lt;<mark>input</mark> <strong>type="checkbox"</strong> <b>id="vehicle1"</b> name="vehicle1" value="Bike">
+      &lt;<mark>label</mark> <b>for="vehicle1"</b>>Eu tenho uma bicicleta&lt;<mark>/label</mark>><br>
+      
+      &lt;<mark>input</mark> <strong>type="checkbox"</strong> <b>id="vehicle2"</b> name="vehicle2" value="Car">
+      &lt;<mark>label</mark> <b>for="vehicle2"</b>>Eu tenho um carro&lt;<mark>/label</mark>><br>
+      
+      &lt;<mark>input</mark> <strong>type="checkbox"</strong> <b>id="vehicle3"</b> name="vehicle3" value="Boat">
+      &lt;<mark>label</mark> <b>for="vehicle3"</b>>Eu tenho um barco&lt;<mark>/label</mark>>
+   &lt;<mark>/form</mark>></pre>
+
+   <p id="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
+
+   <p>É assim que o código HTML acima será exibido em um navegador:</p>
+   
+   <form>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1">Eu tenho uma bicicleta</label><br>
+      
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2">Eu tenho um carro</label><br>
+      
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3">Eu tenho um barco</label>
+   </form>
+   <hr>
+
+   <h2>O botão Enviar</h2>
+
+   <p>O &lt;<mark>input</mark> <strong>type="submit"</strong>>  define um botão para enviar os dados do formulário para um manipulador de formulário.</p>
+
+   <p>O manipulador de formulário geralmente é um arquivo no servidor com um script para processar dados de entrada.</p>
+
+   <p>O manipulador de formulário é especificado no action atributo do formulário.</p>
+
+   <h3>Exemplo</h3>
+
+   <p>Um formulário com um botão de envio:</p>
+   
+   <pre>
+   &lt;<mark>form</mark> <code>action="/action_page.php"</code>>
+      &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>><br>
+      
+      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname"</b> name="fname" value="John"><br>
+      
+      &lt;<mark>label</mark> <b>for="lname"</b>>Último nome:&lt;<mark>/label</mark>><br>
+      
+      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="lname"</b> name="lname" value="Doe"><br>
+      
+      &lt;<mark>input</mark> <strong>type="submit"</strong> value="Submit">
+   &lt;<mark>/form</mark>>
+   </pre>
+
+   <p id="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
+
+   <p>É assim que o código HTML acima será exibido em um navegador:</p>
+   
+   <form action="/action_page.php">
+      <label for="fname">Primeiro nome:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Último nome:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+   </form>
    
 </body>
 </html>
