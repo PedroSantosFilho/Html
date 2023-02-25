@@ -25,17 +25,31 @@
    
    <pre>
    &lt;<mark>form</mark> <strong>action</strong>=<code>"/action_page.php"</code>>
-   &lt;<mark>label</mark> for="fname">First name:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+   &lt;<mark>label</mark> for="fname">Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
    &lt;<mark>input</mark> type="text" id="fname" name="fname" value="John">&lt;<mark>br</mark>>
 
-   &lt;<mark>label</mark>> for="lname">Last name:&lt;<mark>/label</mark>><br>
+   &lt;<mark>label</mark> for="lname">Último nome:&lt;<mark>/label</mark>><br>
    &lt;<mark>input</mark> type="text" id="lname" name="lname" value="Doe">&lt;<mark>br</mark>>&lt;<mark>br</mark>>
       
    &lt;<mark>input</mark> type="submit" value="Submit">
    &lt;<mark>/form</mark>></pre>
    
-   <p><mark>Dica:</mark> Se o actionatributo for omitido, a ação será definida para a página atual.</p>
+   <p><mark>Dica:</mark> Se o atributo action for omitido, a ação será definida para a página atual.</p>
+
+   <h3>Resultado do programa acima</h3>
+
+   <form action="/action_page.php">
+      <label for="fname">Primeiro nome:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+   
+      <label for="lname">Último nome:</label><br>
+   
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+         
+      <input type="submit" value="Submit">
+   </form>
    <hr>
+   
      
 </body>
 </html>
