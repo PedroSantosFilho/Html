@@ -1,0 +1,84 @@
+
+   body {
+      background-color: rgb(61, 61, 226);
+      color: white;
+   }
+   h1, h2 {
+      text-align: center;
+   }
+   p, h3 {
+      font-family: Arial;
+      font-size: 15pt;
+      margin-left: 100px;
+      margin-right: 100px;
+   }
+   pre {
+      background-color: white;
+      color:blue;
+      font-size: 18px;
+      margin-left: 100px;
+      margin-right: 100px;      
+   }
+   strong {
+      background-color: white;
+      color: black;
+   }
+   mark {
+      background-color: rgb(255, 255, 255);
+      color: red;
+   }
+   code {
+      background-color: yellow;
+      color: black;
+   }
+   li, dd, dt{
+      background-color: white;
+      color: black;
+      font-size: 15pt;
+      margin-left: 80pt;
+      margin-right: 400pt;
+   }
+   b {
+      background-color: white;
+      color: rgb(206, 62, 182);
+   }
+   table {
+      border-collapse: collapse;
+      background-color: white;
+      color: black;  
+      width: 100%;     
+   }
+   caption {
+      background-color: yellow;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18pt;
+      padding: 5pt 5pt 5pt 5pt;
+   }
+   th, td {
+      border: 1px solid black;
+      font-size: 18pt;
+      padding: 5px;
+   }
+   th.opera, td.opera {
+      text-align: center;
+   }
+   form {
+      background-color: aqua;
+      color: blue;
+      font-size: 20px;
+      margin-left: 100px;
+      margin-right: 500px;
+   }
+   label {
+      font-size: 25px;
+   }
+   p#obs {
+      background-color: yellow;
+      color: black;
+   }
+   input {
+      border: 1px solid black;
+      padding: 5px;
+      font-size: 15px;
+   }
