@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>O Atributo method</title>
+   <link rel="stylesheet" href="../estilo/style.css">
+
+</head>
+<body>
+   <h1>O atributo do <mark>method</mark>></h1>
+
+   <p>O atributo <mark>method</mark> especifica o método HTTP a ser usado ao enviar os dados do formulário.</p>
+
+   <p>Os dados do formulário podem ser enviados como variáveis ​​de URL (com <mark>method="get"</mark>) ou como pós-transação HTTP (com <mark>method="post"</mark>).</p>
+
+   <p>O método HTTP padrão ao enviar dados de formulário é GET.</p> 
+
+   <h3>Exemplo</h3>
+
+   <p>Este exemplo usa o método GET ao enviar os dados do formulário:</p>
+   
+   <p>Este formulário será enviado usando o método GET:</p>
+   
+   <pre>
+      &lt;<mark>p</mark>>Este formulário será enviado usando o método GET:&lt;<mark>p</mark>>
+
+      &lt;<mark>form</mark> action="/action_page.php" target="_blank" <strong>method="get"</strong>
+         &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+         &lt;<mark>input</mark> type="text" <b>id="fname"</b>> name="fname" value="John">&lt;<mark>br</mark>>
+         
+         &lt;<mark>label</mark> <b>for="lname"</b>>Último nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+         &lt;<mark>input</mark> type="text" <b>id="lname"</b>> name="lname" value="Doe">&lt;<mark>br</mark>>&lt;<mark>br</mark>>
+   
+         &lt;<mark>input</mark> type="submit" value="Submit">
+      &lt;<mark>/form</mark>></pre>
+   
+      <h3>Resultado do programa acima</h3>
+   
+      <form action="/action_page.php" target="_blank" method="get">
+         <label for="fname">Primeiro nome:</label><br>
+         <input type="text" id="fname" name="fname" value="John"><br>
+         
+         <label for="lname">Último nome:</label><br>
+         <input type="text" id="lname" name="lname" value="Doe"><br><br>
+   
+         <input type="submit" value="Submit">
+      </form>
+
+      <p>Depois de enviar, observe que os valores do formulário estão visíveis na barra de endereços da nova guia do navegador</p>
+
+      <p><mark>file:///C:/action_page.php?</mark><strong>fname=John&lname=Doe</strong></p>
+      
+      <hr>
+   
+
+</body>
+</html>
