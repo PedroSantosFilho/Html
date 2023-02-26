@@ -1,5 +1,6 @@
 
    body {
+      font-size: 15pt;
       background-color: rgb(61, 61, 226);
       color: white;
    }
@@ -8,14 +9,12 @@
    }
    p, h3 {
       font-family: Arial;
-      font-size: 15pt;
       margin-left: 100px;
       margin-right: 100px;
    }
    pre {
       background-color: white;
       color:blue;
-      font-size: 18px;
       margin-left: 100px;      
    }
    strong {
@@ -33,9 +32,8 @@
    li, dd, dt{
       background-color: white;
       color: black;
-      font-size: 15pt;
       margin-left: 80pt;
-      margin-right: 400pt;
+      margin-right: 100pt;
    }
    b {
       background-color: white;
@@ -51,12 +49,10 @@
       background-color: yellow;
       color: black;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 18pt;
       padding: 5pt 5pt 5pt 5pt;
    }
    th, td {
       border: 1px solid black;
-      font-size: 18pt;
       padding: 5px;
    }
    th.opera, td.opera {
@@ -65,7 +61,6 @@
    form {
       background-color: aqua;
       color: blue;
-      font-size: 20px;
       margin-left: 100px;
       margin-right: 500px;
    }
@@ -78,6 +73,5 @@
    }
    input {
       border: 1px solid black;
-      padding: 5px;
-      font-size: 15px;
+      padding: 8px;
    }
