@@ -11,8 +11,6 @@
 <body>
    <h1>Links HTML - Hiperlinks</h1>
 
-   <h2>Links HTML são hiperlinks.</h2>
-
    <p>Você pode clicar em um link e pular para outro documento.</p>
 
    <p>Quando você move o mouse sobre um link, a seta do mouse se transforma em uma mãozinha.</p>
@@ -21,11 +19,11 @@
 
    <h3>Sintaxe</h3>
 
-   <p>A tag HTML &lt;<mark>a</mark>>  define um hiperlink. </p>
+   <p>A tag HTML &lt;<mark> a </mark>>  define um hiperlink. </p>
    <pre>
-      &lt;<mark>a</mark> <strong>href="url"</strong>>link text&lt;<mark>/a</mark>></pre>
+      &lt;<mark> a </mark> <strong>href="url"</strong>>link text&lt;<mark> /a </mark>></pre>
 
-   <p>O atributo mais importante do &lt;<mark>a</mark>> elemento é o atributo <mark>href</mark>, que indica o destino do link.</p>
+   <p>O atributo mais importante do &lt;<mark> a </mark>> elemento é o atributo <mark>href</mark>, que indica o destino do link.</p>
 
    <p>O texto do link é a parte que ficará visível para o leitor.</p>
 
@@ -35,9 +33,62 @@
 
    <p>Este exemplo mostra como criar um link para W3Schools.com:</p>
    <pre>
-   &lt;<mark>a</mark> <strong>href="https://www.w3schools.com/html/default.asp" target="_blank"</strong>><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools!</a></pre>
+   &lt;<mark> a </mark> <strong>href="https://www.w3schools.com/html/default.asp" target="_blank"</strong>><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools!</a></pre>
    <hr>
 
+   <p>Por padrão, os links aparecerão da seguinte maneira em todos os navegadores:</p>
+
+   <ul>
+      <li>Um link não visitado é sublinhado e azul</li>
+      <li>Um link visitado é sublinhado e roxo</li>
+      <li>Um link ativo é sublinhado e vermelho</li>
+   </ul>
+
+   <p><mark>Dica:</mark> os links podem, obviamente, ser estilizados com CSS, para obter uma outra aparência!</p>
+
+   <h2>Links HTML - O atributo de destino</h2>
+
+   <p>Por padrão, a página vinculada será exibida na janela atual do navegador. Para alterar isso, você deve especificar outro destino para o link.</p>
+
+   <p>O atributo <mark>target</mark> especifica onde abrir o documento vinculado.</p>
+
+   <p>O atributo <mark>target</mark> pode ter um dos seguintes valores:</p>
+   <ul>
+      <li><mark>_self</mark> - Padrão. Abre o documento na mesma janela/guia em que foi clicado</li>
+      <li><mark>_blank</mark> - Abre o documento em uma nova janela ou guia</li>
+      <li><mark>_parent</mark> - Abre o documento no quadro pai</li>
+      <li><mark>_top</mark> - Abre o documento em todo o corpo da janela</li>
+   </ul>
+   
+   <h3>Exemplo</h3>
+
+   <p>Use <strong>target="_blank"</strong> para abrir o documento vinculado em uma nova janela ou guia do navegador:</p>
+
+   <pre>
+      &lt;<mark> a </mark> href="https://www.w3schools.com/html/default.asp" <strong>target="_blank"</strong>><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools!</a></pre>
+      <hr>
+
+   <h2>URLs absolutos vs. URLs relativos</h2>
+
+   <p>Ambos os exemplos acima estão usando um <strong>URL absoluto</strong> (um endereço da Web completo) no atributo <mark> href </mark>.</p>
+   
+   <p>Um link local (um link para uma página dentro do mesmo site) é especificado com um <strong>URL relativo</strong> (sem a parte <strong>"https://www"</strong>):</p>
+            
+   <pre>
+      &lt;<mark> a </mark> href="/html/Html/cabecalho/index.html"><a href="/html/Html/cabecalho/index.html">Cabeçalho</a></pre>
+      <hr>
+      
+   <h2>Links HTML - Use uma imagem como um link</h2>
+   
+   <p>Para usar uma imagem como link, basta colocar a tag <mark>&lt;img></mark> dentro da tag <mark>&lt;a></mark></p>
+   
+   <h3>Exemplo</h3>
+   
+   <pre>
+      <mark>&lt;a</mark> href="default.asp"<mark>></mark>
+         <mark>&lt;img</mark> src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"<mark>></mark>
+      <mark>&lt;/a></mark></pre>
+   <hr>
 
 </body>
 </html>
