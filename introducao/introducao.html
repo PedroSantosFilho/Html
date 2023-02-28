@@ -40,19 +40,99 @@
       &lt;<mark>p</mark>>Primeiro parágrafo&lt;<mark>/p</mark>>
 
    &lt;<mark>/body</mark>>
-   &lt;<mark>/html</mark></pre>
+   &lt;<mark>/html</mark>></pre>
 
    <h3>Exemplo explicado</h3>
    
    <ul>
       <li>A declaração &lt;<mark>!DOCTYPE html</mark>> define que este documento é um documento HTML5</li>
+     
       <li>O elemento &lt;<mark>html</mark>> é o elemento raiz de uma página HTML</li>
+     
       <li>O elemento &lt;<mark>head</mark>> contém metainformações sobre a página HTML</li>
+     
       <li>O elemento &lt;<mark>title</mark>> especifica um título para a página HTML (que é mostrado na barra de título do navegador ou na guia da página)</li>
+      
       <li>O elemento &lt;<mark>body</mark>> define o corpo do documento e é um recipiente para todos os conteúdos visíveis, como cabeçalhos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.</li>
+      
       <li>O elemento &lt;<mark>h1</mark>> define um título grande</li>
+      
       <li>O elemento &lt;<mark>p</mark>> define um parágrafo</li>
    </ul>
+   <hr>
+
+   <h2>O que é um elemento HTML?</h2>
+
+   <p>Um elemento HTML é definido por uma tag inicial, algum conteúdo e uma tag final:</p>
+   
+   <pre>
+   Exemplo
+   &lt; <mark>tagname inicial</mark> > O conteúdo vai aqui... &lt; <mark> /tagname final</mark> >
+   
+   O elemento HTML é tudo, desde a tag inicial até a tag final:
+   
+   &lt; <mark> h1</mark> > Meu primeiro cabeçalho &lt; <mark> /h1 </mark> >
+   
+   &lt; <mark> p </mark> > Meu primeiro parágrafo. &lt; <mark> /p </mark> ></pre>
+   <hr>
+
+   <table>
+      <caption>Tabela das Tags Html:5 </caption>
+      <tr>
+         <th class="opera">Start tag</th>
+         <th class="opera">Element content</th>
+         <th class="opera">End tag</th>
+      </tr>
+      <tr>
+         <td class="opera">&lt;<mark>h1</mark>></td>
+         <td class="opera">	Meu prieiro Cabeçalho </td>
+         <td class="opera">&lt;<mark>/h1</mark>></td>
+      </tr>
+      <tr>
+         <td class="opera">&lt;<mark>p</mark>></td>
+         <td class="opera">Meu prieiro paragrafo.</td>
+         <td class="opera">&lt;<mark>/p</mark>></td>
+      </tr>
+      <tr>
+         <td class="opera">&lt;<mark>br</mark>></td>
+         <td class="opera">não tem</td>
+         <td class="opera">não tem</td>
+      </tr>
+   </table>
+
+   <p><mark>Nota:</mark> Alguns elementos HTML não possuem conteúdo (como o elemento &lt;<mark>br</mark>>). Esses elementos são chamados de elementos vazios. Elementos vazios não possuem uma tag final</p>
+   <hr>
+
+   <h2>Navegadores da Web</h2>
+
+   <p>O objetivo de um navegador da Web (<strong>Chrome, Edge, Firefox, Safari</strong>) é ler documentos HTML e exibi-los corretamente.</p>
+
+   <p>Um navegador não exibe as tags HTML, mas as utiliza para determinar como exibir o documento:</p>
+   <hr>
+
+   <h2>Estrutura da Página HTML</h2>
+
+   <p>Abaixo está uma visualização de uma estrutura de página HTML:</p>
+
+   <pre>
+   &lt;<mark>!DOCTYPE html</mark>>
+   &lt;<mark>html</mark> lang="pt-br">
+   &lt;<mark>head</mark>>
+      &lt;<mark>meta</mark> charset="UTF-8">
+      &lt;<mark>meta</mark> http-equiv="X-UA-Compatible" content="IE=edge">
+      &lt;<mark>meta</mark> name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+      &lt;<mark>title</mark>>Título da Página HTML&lt;<mark>/title</mark>>
+      &lt;<mark>link</mark>> rel="stylesheet" href="../estilo/style.css">
+   &lt;<mark>/head</mark>>
+   &lt;<mark>body</mark>>
+      &lt;<mark>h1</mark>>Este é um título&lt;<mark>/h1</mark>>
+      &lt;<mark>p</mark>>Isto é um parágrafo.&lt;<mark>/p</mark>>
+      &lt;<mark>p</mark>>Este é outro parágrafo.&lt;<mark>/p</mark>>
+   &lt;<mark>/body</mark>>
+   &lt;<mark>/html</mark>></pre>
+
+   <p><mark>Nota:</mark> O conteúdo dentro da seção &lt;<mark>body</mark>> (a área branca acima) será exibido em um navegador. O conteúdo dentro do elemento &lt;<mark>title</mark>> será mostrado na barra de título do navegador ou na aba da página.&lt;<mark>/title</mark>></p>
    <hr>
 
 </body>
