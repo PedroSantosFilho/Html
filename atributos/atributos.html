@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Atributos HTML</title>
+   <link rel="stylesheet" href="../estilo/style.css">
+
+</head>
+<body>
+   <h1>Atributos HTML</h1>
+
+   <p>Os atributos HTML fornecem informações adicionais sobre os elementos HTML.</p>
+
+   <ul>
+      <li>Todos os elementos HTML podem ter <strong>atributos</strong></li>
+      <li>Os atributos fornecem <strong>informações adicionais</strong> sobre os elementos</li>
+      <li>Os atributos são sempre especificados na <strong>tag de início</strong></li>
+      <li>Os atributos geralmente vêm em pares de nome/valor como: <strong>name="value"</strong></li>
+   </ul>
+   
+   <h2>O atributo <mark>href</mark></h2>
+
+   <p>A tag &lt;<b> a </b>> define um hiperlink. O atributo <mark> href </mark> especifica a <strong> URL </strong> da página para a qual o link vai:</p>
+   <pre>
+   Exemplo
+   &lt;<b> a </b> <mark> href </mark> = <strong> "https://www.w3schools.com" </strong>>Visit W3Schools &lt;<b> /a </b>>
+   </pre>
+   <hr>
+
+   <h2>O Atributo <mark>src</mark></h2>
+
+   <p>A tag &lt;<b> img </b>> é usada para incorporar uma imagem em uma página HTML. O atributo <mark> src </mark>  especifica o caminho para a imagem a ser exibida:</p>
+
+   <pre>
+   Exemplo
+   &lt;<b>img</b>  <mark>src</mark> = <strong>"img_girl.jpg"</strong>></pre>
+
+   <p>Há duas maneiras de especificar a URL no src atributo:</p>
+
+   <p><strong>1. URL absoluta</strong> - Links para uma imagem externa que está hospedada em outro site. Exemplo: <strong>src="https://www.w3schools.com/images/img_girl.jpg"</strong>.</p>
+
+   <p><strong>Observações:</strong> As imagens externas podem estar sob direitos autorais. Se você não obtiver permissão para usá-lo, poderá estar violando as leis de direitos autorais. Além disso, você não pode controlar as imagens externas; ele pode ser removido ou alterado repentinamente.</p>
+
+   <p><strong>2. URL relativo</strong> - Links para uma imagem hospedada no site. Aqui, a URL não inclui o nome de domínio.</p>
+   <p>Se a URL começar sem uma barra, ela será relativa à página atual. Exemplo: <strong>src="img_girl.jpg"</strong>. </p>
+   <p>Se a URL começar com uma barra, ela será relativa ao domínio. Exemplo: <strong>src="/images/img_girl.jpg"</strong>.</p>
+
+   <p><mark>Dica:</mark> quase sempre é melhor usar URLs relativos. Eles não vão quebrar se você mudar de domínio.</p>
+   <hr>
+
+   <h2>Os atributos de largura e altura</h2>
+
+   <p>A tag &lt;<b>img</b>> também deve conter os atributos <mark>widthe height</mark>, que especificam a largura e a altura da imagem (em pixels):</p>
+
+   <pre>
+   Exemplo
+   &lt;<b>img</b> src="img_girl.jpg" <mark>width="500" height="600"</mark>></pre>
+   <hr>
+
+   <h2>O Atributo <mark>Alt</mark></h2>
+
+   <p>O atributo obrigatório alt para a tag &lt;<b>img</b> especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ocorrer devido a uma conexão lenta ou a um erro no atributo src ou se o usuário usar um leitor de tela.</p>
+
+   <pre>
+   Exemplo
+      &lt;<b>img</b> src="img_girl.jpg" <mark>alt</mark>="Garota com uma jaqueta"></pre>
+
+   <h3>Exemplo</h3>
+
+   <p>Veja o que acontece se tentarmos exibir uma imagem que não existe:</p>
+
+   <pre>
+      &lt;<b>img</b> src="img_typo.jpg" <mark>alt</mark>="Garota com uma jaqueta"></pre>
+   <hr>
+
+  <h2>O atributo <mark>lang</mark></h2>
+
+   <p>Você deve sempre incluir o  ,atributo <mark>lang</mark> dentro da tag &lt;<b>html</b>>, para declarar o idioma da página da Web. Isso se destina a ajudar os motores de busca e navegadores.</p>
+
+   <p>O exemplo a seguir especifica o inglês como o idioma:</p>
+
+   <pre>
+      &lt;<b>!DOCTYPE html</b>>
+      &lt;<b>html</b> <mark>lang="en"</mark>></pre>
+
+   <p>Os códigos de país também podem ser adicionados ao código de idioma no lang atributo. Assim, os dois primeiros caracteres definem o idioma da página HTML e os dois últimos caracteres definem o país.</p>
+
+   <p>O exemplo a seguir especifica o inglês como idioma e Estados Unidos como país:</p>
+
+   <pre>
+      &lt;<b>!DOCTYPE html</b>>
+      &lt;<b>html</b> <mark>lang="en-US"</mark>></pre>
+   <hr>
+
+   <h2>O atributo do <mark>title</mark></h2>
+   
+   <p>O atributo <mark>title</mark> define algumas informações extras sobre um elemento.</p>
+
+   <p>O valor do atributo <mark>title</mark> será exibido como uma dica de ferramenta quando você passar o mouse sobre o elemento:</p>
+
+   <pre>
+   Exemplo
+   &lt;<b>p</b> <mark>title</mark>="I'm a tooltip">Este é um parágrafo.</p></pre>
+   <hr>
+
+   <p><strong>Importante:</strong> Sempre use atributos em minúsculas
+   O padrão HTML não requer nomes de atributos em minúsculas.</p>
+
+   <p>O atributo <strong>title</strong> (e todos os outros atributos) pode ser escrito com letras maiúsculas ou minúsculas como <strong>title</strong> ou <strong>TITLE</strong> .</p>
+
+   <p>No entanto, o <strong>W3C</strong> recomenda atributos em minúsculas em HTML e <strong>exige</strong> atributos em minúsculas para tipos de documentos mais rígidos, como XHTML</p>
+   <hr>
+
+   <h2>Recomendação: Sempre cite os valores dos atributos</h2>
+
+   <p>O padrão HTML não requer aspas em torno dos valores de atributo.</p>
+   
+   <p>No entanto, <strong>o W3C recomenda aspas</strong> em HTML e <strong>exige aspas</strong> para tipos de documentos mais rígidos, como XHTML.</p>
+   <hr>
+
+   <h2>Aspas Simples ou Duplas?</h2>
+
+   <p><mark>Aspas duplas</mark> em torno de valores de atributos <mark>são as mais comuns em HTML</mark>, mas aspas simples também podem ser usadas.</p>
+
+   <p>Em algumas situações, quando o próprio valor do atributo contém aspas duplas, é necessário o uso de aspas simples:</p>
+   <hr>
+
+   <h2>Resumo do capítulo</h2>
+
+   <ul>
+      <li>Todos os elementos HTML podem ter atributos</li>
+      <li>O atributo <strong>href</strong> de &lt;<b> a </b>> especifica a URL da página para a qual o link vai</li>
+      <li>O atributo <strong>src</strong> de &lt;<b> img </b>> especifica o caminho para a imagem a ser exibida</li>
+      <li>Os atributos <strong>width</strong> e fornecem informações de tamanho para imagens <strong>height</strong> &lt;<b> img </b>></li>
+      <li>O atributo <strong>alt</strong> de &lt;<b> img </b>> fornece um texto alternativo para uma imagem</li>
+      <li>O atributo <strong>style</strong> é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e mais</li>
+      <li>O atributo <strong>lang</strong>  da tag &lt;<b> html </b>> declara o idioma da página da Web</li>
+      <li>O atributo <strong>title</strong> define alguma informação extra sobre um elemento</li>
+   </ul>
+   <hr>
+
+</body>
+</html>
