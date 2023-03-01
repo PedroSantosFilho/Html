@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title></title>
-   <link rel="stylesheet" href="/estilo/style.css">
+   <link rel="stylesheet" href="../estilo/style.css">
 
 </head>
 <body>
@@ -23,7 +23,7 @@
    <pre>
       &lt;<mark> a </mark> <strong>href="url"</strong>>link text&lt;<mark> /a </mark>></pre>
 
-   <p>O atributo mais importante do &lt;<mark> a </mark>> elemento é o atributo <mark>href</mark>, que indica o destino do link.</p>
+   <p>O atributo mais importante do elemento &lt;<mark> a </mark>> é o atributo <mark> href </mark>, que indica o destino do link.</p>
 
    <p>O texto do link é a parte que ficará visível para o leitor.</p>
 
@@ -32,8 +32,10 @@
    <h3>Exemplo</h3>
 
    <p>Este exemplo mostra como criar um link para W3Schools.com:</p>
+   
    <pre>
-   &lt;<mark> a </mark> <strong>href="https://www.w3schools.com/html/default.asp" target="_blank"</strong>><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools!</a></pre>
+&lt;<mark> a </mark> <strong>href="https://www.w3schools.com/html/default.asp" target="_blank"></strong>>
+<a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools!</a>&lt;<mark>/a</mark>></pre>
    <hr>
 
    <p>Por padrão, os links aparecerão da seguinte maneira em todos os navegadores:</p>
@@ -45,6 +47,7 @@
    </ul>
 
    <p><mark>Dica:</mark> os links podem, obviamente, ser estilizados com CSS, para obter uma outra aparência!</p>
+   <hr>
 
    <h2>Links HTML - O atributo de destino</h2>
 
@@ -86,8 +89,32 @@
    
    <pre>
       <mark>&lt;a</mark> href="default.asp"<mark>></mark>
-         <mark>&lt;img</mark> src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"<mark>></mark>
+         <mark>&lt;img</mark> src="smiley.gif" alt="HTML tutorial" 
+         style="width:42px; height:42px; "<mark>></mark>
       <mark>&lt;/a></mark></pre>
+   <hr>
+
+   <h2>Link para um endereço de e-mail</h2>
+
+   <p>Use <strong>mailto:</strong> dentro do atributo href para criar um link que abra o programa de e-mail do usuário (para permitir que ele envie um novo e-mail):</p>
+   
+   <pre>
+   Exemplo
+   &lt;<b>a </b> href="<strong>mailto:</strong>someone@example.com"><a  href="mailto:someone@example.com"><mark>Enviar email</mark></a>&lt;<b>/a</b>></pre>
+   <hr>
+
+   <h2>Botão como um link</h2>
+
+   <p>Para usar um botão HTML como um link, você deve adicionar algum código JavaScript.</p>
+
+   <p>O JavaScript permite que você especifique o que acontece em determinados eventos, como o clique de um botão:</p>
+
+   <pre>
+   Exemplo
+   &lt;<b>button</b> onclick="document.location='/html/Html/
+   introducao/introducao.html'"><mark>Introdução HTML</mark>&lt;<b>/button</b>></pre>
+
+   <p>Vai para a página Introdução ao HTML<button onclick="document.location='/html/Html/introducao/introducao.html'">Introdução HTML</button></p>
    <hr>
 
 </body>
