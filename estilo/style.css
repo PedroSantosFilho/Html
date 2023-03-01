@@ -7,6 +7,12 @@
    h1, h2 {
       text-align: center;
    }
+
+   .exp {
+      text-align: left;
+      margin-left: 100px;
+      margin-right: 200px;
+   }
    p, h3 {
       text-align: justify;
       font-family: Arial;
@@ -16,7 +22,8 @@
    pre {
       background-color: white;
       color:blue;
-      margin-left: 100px;      
+      margin-left: 100px;  
+      margin-right: 100px;   
    }
    strong {
       background-color: white;
