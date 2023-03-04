@@ -89,9 +89,9 @@
       padding: 8px;
    }
    button#left {
-      margin-left: 499px;
+      margin-left: 480px;
    }
-   button#left2 {
+   *#left2 {
       margin-left: 450px;
    }
    blockquote {
