@@ -5,11 +5,15 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Comentarios Html</title>
-   <link rel="stylesheet" href="/estilo/style.css">
+   <link rel="stylesheet" href="../estilo/style.css">
    
 </head>
 <body>
    <h1>Comentários HTML</h1>
+
+   <p><button type="button" onclick="document.location='/html/Html/citacoes/citacoes.html'">CITAÇÕES HTML</button>
+   
+   <button id="left" type="button" onclick="document.location='/html/Html/links/links.html'">LINKS HTML</button></p>
 
    <p>Os comentários HTML não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte HTML.</p>
 
@@ -17,7 +21,7 @@
 
    <p>Você pode adicionar comentários à sua fonte HTML usando a seguinte sintaxe:</p>
 
-   <p><mark>&lt;!-- Escreva seu comentário aqui -- ></mark></p>
+   <p><mark>&lt;!-- Escreva seu comentário aqui --&gt;</mark></p>
 
    <p>Observe que há um ponto de exclamação <mark>( ! )</mark> na tag inicial, mas não na tag final.</p>
 
@@ -30,9 +34,11 @@
 
    <h3>Exemplo</h3>
    <pre>
-      <mark>&lt;p></mark><mark>&lt;!-- Este é um comentário -- ></mark><mark>&lt;/p></mark>
-      <mark>&lt;p></mark> Este é um parágrafo. <mark>&lt;/p></mark>
-      <mark>&lt;p></mark><mark>&lt;!-- Lembere-se de adicionar mais informações aqui -- ></mark><mark>&lt;/p></mark></pre>
+      <mark>&lt;!-- Este é um comentário --&gt;</mark>
+
+      <mark>&lt;p&gt;</mark> Este é um parágrafo. <mark>&lt;/p&gt;</mark>
+
+      <mark>&lt;!-- Lembere-se de adicionar mais informações aqui --&gt;</mark></pre>
    <hr>
 
    <h2>Ocultar conteúdo</h2>
@@ -44,24 +50,28 @@
    <h3>Exemplo</h3>
    
    <pre>
-      <mark>&lt;p></mark>Este é um parágrafo.<mark>&lt;/p></mark>
-      <mark>&lt;p></mark><mark>&lt;!-- <mark>&lt;p></mark> Este é outro parágrafo. &lt;/p> -- ></mark><mark>&lt;/p></mark>
-      <mark>&lt;p></mark>Este é um parágrafo também.<mark>&lt;/p></mark></pre>
+      <mark>&lt;p&gt;</mark>Este é um parágrafo.<mark>&lt;/p></mark>
 
-   <p>Você também pode ocultar mais de uma linha. Tudo entre o <mark>&lt;!-- e o -- ></mark> ficará oculto na tela.</p>
+      <mark>&lt;p&gt;</mark><mark>&lt;!-- <mark>&lt;p&gt;</mark> Este é outro parágrafo. &lt;/p&gt; --&gt;</mark><mark>&lt;/p&gt;</mark>
+
+      <mark>&lt;p&gt;</mark>Este é um parágrafo também.<mark>&lt;/p&gt;</mark></pre>
+
+   <p>Você também pode ocultar mais de uma linha. Tudo entre o <mark>&lt;!-- e o --&gt;</mark> ficará oculto na tela.</p>
 
    <h3>Exemplo</h3>
 
    <p>Ocultar uma seção do código HTML:</p>
 
    <pre>
-      <mark>&lt;p></mark>Este é um parágrafo./<mark>&lt;p></mark>
-      <mark>&lt;p>&lt;!--</mark>
-         <mark>&lt;p></mark> Look at this cool image:<mark>&lt;/p></mark>
-         <mark>&lt;img</mark> border="0" src="pic_trulli.jpg" alt="Trulli"<mark>></mark>
-      <mark>-->&lt;/p></mark> 
-      <mark>&lt;p></mark>Este é um parágrafo também.<mark>&lt;/p></mark></pre>
+      <mark>&lt;p&gt;</mark>Este é um parágrafo./<mark>&lt;p&gt;</mark>
 
+      <mark>&lt;p&gt;&lt;!--</mark>
+         <mark>&lt;p&gt;</mark> Look at this cool image:<mark>&lt;/p&gt;</mark>
+
+         <mark>&lt;img</mark> border="0" src="pic_trulli.jpg" alt="Trulli"<mark>&gt;</mark>
+      <mark>--&gt;&lt;/p&gt;</mark>
+
+      <mark>&lt;p&gt;</mark>Este é um parágrafo também.<mark>&lt;/p&gt;</mark></pre>
 
    <p>Comentários também são ótimos para depurar HTML, porque você pode comentar linhas de código HTML, uma de cada vez, para procurar erros.</p>
 
@@ -73,7 +83,7 @@
 
    <p>Ocultar uma parte de um parágrafo:</p>
 
-   <p>Este <mark>&lt;!-- ótimo texto -- ></mark> é um parágrafo.</p>
+   <p>Este <mark>&lt;!-- ótimo texto --&gt;</mark> é um parágrafo.</p>
 
 </body>
 </html>
