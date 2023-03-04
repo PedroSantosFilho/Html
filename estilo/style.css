@@ -20,6 +20,7 @@
       margin-right: 100px;
    }
    pre {
+      text-align: justify;
       background-color: white;
       color:blue;
       margin-left: 100px;  
@@ -89,4 +90,16 @@
    }
    button#left {
       margin-left: 499px;
+   }
+   button#left2 {
+      margin-left: 450px;
+   }
+   blockquote {
+      text-align: justify;
+      padding: 8px;
+      margin-left: 150%;
+      margin-right: 100%;
+   }
+   address {
+      margin-left: 10%;
    }
