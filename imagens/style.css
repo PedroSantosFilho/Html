@@ -26,3 +26,7 @@
       height: 150px;
       margin-left: 250pt;
    }
+
+   p#direita {
+      margin-right: 350pt;
+   }
