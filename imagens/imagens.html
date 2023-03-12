@@ -30,7 +30,14 @@
 
       <p>O atributo <strong> src </strong> é obrigátorio, ele mostra o <mark>endereço</mark> onde está localiza a imagem.</p>
 
+      <h3>Imagens em outra pasta</h3>
+
+      <p>Se você tiver suas imagens em uma subpasta, deverá incluir a pasta nome no atributo <strong> src </strong>.</p>
+      <p>Exemplo: <strong>src="../imagem/paisagens/paisage600.jpg"</strong></p>
+
       <p>O atributo <strong> alt </strong> também é obrigátorio, ele mostra o <mark>texto explicativo</mark> da imagem, caso ela não possa ser exibida.</p>
+
+      <p><mark>Dica:</mark> um leitor de tela é um programa de software que lê o código HTML e permite que o usuário "ouça" o conteúdo. Leitores de tela são úteis para pessoas com deficiência visual ou dificuldade de aprendizado.</p>
 
       <p><mark>Observação:</mark> Na CSS Sempre especifique a largura (<mark>width</mark>) e a altura (<mark>height</mark>) de uma imagem. Se a largura e a altura não forem especificadas, a página da Web poderá piscar enquanto a imagem é carregada.</p>
 
@@ -90,6 +97,12 @@
       <p>O atributo <strong> src </strong> mostra o <mark>endereço</mark> onde está localiza a imagem.</p>
 
       <p>O atributo <strong> alt </strong> mostra o <mark>texto explicativo</mark> para da imagem, caso ela não possa ser exibida.</p>
+
+      <h3>Imagens em outro servidor/site</h3>
+
+      <p>Alguns sites apontam para uma imagem em outro servidor.</p>
+         
+      <p>Para apontar para uma imagem em outro servidor, você deve especificar uma <mark> URL </mark> absoluta (completa) no atributo <strong> src </strong>:</p>
       
       <pre>
          &lt;<mark>img</mark> id="javascript" 
@@ -99,10 +112,58 @@
       <img id="javascript" src="https://logospng.org/wp-content/uploads/javascript.png" alt="Logomarca JavaScript">
 
       <p><mark>Nota:</mark> Caso o site deixe de existir, ou não possa ser exibido, só será mostrado o texto explicativo.</p>
+
+      <p><strong>Observações sobre imagens externas:</strong> As imagens externas podem estar sob direitos autorais. Se não obtiver permissão para usá-lo, pode-se está violando as leis de direitos autorais. Além disso, não se pode controlar as imagens externas; elas podem ser removidos ou alterados repentinamente.</p>
       <hr>
    </section>
 
+   <h2>Imagem flutuante</h2>
+
+   <p>Use a propriedade CSS <mark>float</mark> para deixar a imagem flutuar à direita <strong>float:right;</strong> ou à esquerda <strong>float:left;</strong> de um texto:</p>
+
+   <pre>
+   Exemplo
+   <strong>float:right;</strong> imagem para a direita.
+   &lt;<mark>p</mark>&gt;&lt;<mark>img</mark>  src="../logomarcas/smiley.gif" alt="Smiley face" 
+   style="<strong>float:right;</strong> width:42px;height:42px;">
+   A imagem flutuará para a direita do texto.&lt;<mark>/p</mark>&gt;
+
+   <strong>float:left;</strong> imagem para a esquerda.
+   &lt;<mark>p</mark>&gt;&lt;<mark>img</mark> src="../logomarcas/smiley.gif" alt="Smiley face" 
+   style="<strong>float:left;</strong> width:42px;height:42px;">
+   A imagem flutuará para a esquerda do texto.&lt;<mark>/p</mark>&gt;</pre>
+
+   <h3>Resultado do Exemplo acima.</h3>
+
+   <p><strong>float:right;</strong> imagem para a direita.</p>
+
+   <p id="direita"><img  src="../imagem/logomarcas/smiley.gif" alt="Smiley face" 
+   style="float:right; width:42px;height:42px;">
+   A imagem flutuará para a direita do texto.</p>
+
+   <p><strong>float:left;</strong> imagem para a esquerda.</p>
+
+   <p><img src="../imagem/logomarcas/smiley.gif" alt="Smiley face" 
+   style="float:left; width:42px;height:42px;">
+   A imagem flutuará para a esquerda do texto.</p>
+   <hr>
+
+   <h2>Resumo</h2>
+   
+   <ul>
+      <li>Use o elemento HTML &lt;<mark>img</mark>&gt; para definir uma imagem</li>
+      <li>Use o atributo HTML <mark>src</mark> para definir a <strong>URL</strong> da imagem</li>
+      <li>Use o atributo HTML <mark>alt</mark> para definir um <strong>texto alternativo</strong> para uma imagem, se ela não puder ser exibida</li>
+      <li>Use os atributos HTML <mark>width</mark> (largura) e <mark>height</mark> (altura) ou as propriedades CSS <mark>width</mark> e <mark>height</mark> para definir o tamanho da imagem</li>
+      <li>Use a propriedade CSS <mark>float</mark> para deixar a imagem <strong>flutuar</strong> para a esquerda <strong>float:left;</strong> ou para a direita <strong>float:right;</strong></li>
+   </ul>
+      
+   <p><mark>Observação:</mark> Carregar <strong>imagens grandes</strong> leva tempo e pode deixar sua página da web mais lenta. Use as imagens com cuidado.</p>
+   <hr>
+
+   <!--BOTÃO VOLTA PARA A PÁGINA LINK-->
    <p><button type="button" onclick="document.location='/html/Html/links/links.html'">LINKS HTML</button></p>
+   <hr>
 
 </body>
 </html>
