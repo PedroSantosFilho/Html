@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mapas de Imagem HTML</title>
+
+   <!-- CONFIGURANDO O DOCUmENTO HTmL-->
+   <link rel="stylesheet" href="/estilo/style.css">
+
+   <!-- CONFIGURANDO A PÁGINA -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h1>Mapas de Imagem HTML</h1>
+
+   <p>Com mapas de imagem HTML, pode-se criar áreas clicáveis em uma imagem.</p>
+
+   <h2>Mapas de imagem</h2>
+
+   <p>A tag HTML &lt;<mark>map</mark>&gt; define um mapa de imagem. Um mapa de imagem é uma imagem com áreas clicáveis. As áreas são definidas com uma ou mais tags &lt;<mark>area</mark>&gt;.</p>
+
+   <h3>Inserindo uma imagem</h3>
+
+   <p>Para inserir uma imagem no documento HTML usamos a tag &lt;<mark>img</mark>&gt;.</p>
+   
+   <p>O atributo <strong> src </strong> é obrigátorio, ele mostra o <mark>endereço</mark> onde está localiza a imagem.</p>
+   
+   <p>O atributo <strong> alt </strong> também é obrigátorio, ele mostra o <mark>texto explicativo</mark> da imagem, caso ela não possa ser exibida.</p>
+
+   <pre>
+   Exemplo
+   &lt;<mark>img</mark> <strong>src="/html/Html/imagens_1/outros/computador-celular-cafe.jpeg"</strong>
+   alt="computador, celular e café"></pre>
+      
+   <img src="/html/Html/imagens_1/outros/computador-celular-cafe.jpeg" alt="computador, celular e café">
+
+   <h2>Como funciona?</h2>
+
+   <p>A ideia por trás de um mapa de imagem é que deve-se ser capaz de realizar diferentes ações, dependendo de onde se clicar na imagem.</p>
+
+   <p>Para criar um mapa de imagem, precisa-se de uma imagem e algum código HTML que descreva as áreas clicáveis.</p>
+   <hr>
+
+   <H2>A imagem</H2>
+
+   <P>A única diferença de outras imagens é que você deve adicionar o atributo <mark>usemap</mark>:
+   
+   <pre>
+      Exemplo
+      &lt;<mark>img</mark> <strong>src="/html/Html/imagens_1/outros/computador-celular-cafe.jpeg"</strong>
+      alt="computador, celular e café" 
+      <b>usemap="#workmap"</b>></pre>
+
+   <p>O valor <mark>usemap</mark> começa com uma marca de hash-tag <mark> #</mark> seguida pelo <b>nome do mapa</b> de imagem e é usado para criar um relacionamento entre a imagem e o mapa de imagem.</p>
+   
+   <p><mark>Dica:</mark> pode-se usar qualquer imagem como um mapa de imagem!</p>
+   <hr>
+
+   <h2>Criar mapa de imagem</h2>
+
+   <p>Em seguida, adicione um elemento &lt;<mark>map</mark>&gt;. O elemento &lt;<mark>map</mark>&gt; é usado para criar um mapa de imagem e é vinculado à imagem usando o atributo obrigatório <b>name=</b><strong>"valor igual ao atributo usemap da tag img"</strong></p>
+
+   <pre>
+      Exemplo
+      &lt;<mark>img</mark> <strong>src="/html/Html/imagens_1/outros/computador-celular-cafe.jpeg"</strong>
+      alt="computador, celular e café" 
+      <b>usemap="#workmap"</b>>
+   
+   &lt;<mark>map</mark> <b>name="workmap"</b>></pre>
+
+   <p>O atributo <b>name</b> deve ter o mesmo valor do atributo <b>usemap</b> da tag &lt;<mark>img</mark>&gt;.</p>
+
+   <hr>
+
+</body>
+</html>
