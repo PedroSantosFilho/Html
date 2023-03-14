@@ -3,3 +3,16 @@ img {
    height: 40%;
    margin-left: 200pt;
 }
+p, h3 {
+   text-align: justify;
+   font-family: Arial;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+li, dd, dt{
+   background-color: white;
+   color: black;
+   margin-left: 80pt;
+   margin-right: 100pt;
+   padding: 10px;
+}
