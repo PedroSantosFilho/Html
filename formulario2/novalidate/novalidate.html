@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>O Atributo Novalidate</title>
+
+   <link rel="stylesheet" href="../estilo/style.css">
+
+</head>
+<body>
+   <h1>O Atributo <mark>Novalidate</mark></h1>
+
+   <p>O atributo <mark>novalidate</mark> é um atributo booleano.</p>
+
+   <p>Quando presente, especifica que os dados do formulário (input) não devem ser validados quando enviados.</p>
+
+   <pre>
+      Exemplo
+      &lt;<mark>p</mark>>Um formulário com um atributo novalidate:&lt;<mark>/p</mark>>
+      &lt;<mark>p</mark>>Um formulário com preenchimento automático em "on".&lt;<mark>/p</mark>>
+      &lt;<mark>p</mark>>Este formulário será enviado usando o método GET:&lt;<mark>/p</mark>>
+
+      &lt;<mark>form</mark> action="/action_page.php" target="_blank" method="get" 
+      <strong>autocomplete="on"</strong> <mark>novalidate</mark>>
+
+         &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+         &lt;<mark>input</mark> type="text" <b>id="fname"</b>> name="fname" value="John">&lt;<mark>br</mark>>
+         
+         &lt;<mark>label</mark> <b>for="lname"</b>>Último nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+         &lt;<mark>input</mark> type="text" <b>id="lname"</b>> name="lname" value="Doe">&lt;<mark>br</mark>>&lt;<mark>br</mark>>
+   
+         &lt;<mark>input</mark> type="submit" value="Submit">
+      &lt;<mark>/form</mark>></pre>
+   
+      <h3>Resultado do exemplo acima</h3>
+   
+      <form action="/action_page.php" target="_blank" method="get" autocomplete="on" novalidate>
+
+         <label for="fname">Primeiro nome:</label><br>
+         <input type="text" id="fname" name="fname" value="John"><br>
+         
+         <label for="lname">Último nome:</label><br>
+         <input type="text" id="lname" name="lname" value="Doe"><br><br>
+   
+         <input type="submit" value="Submit">
+      </form>
+   
+   <hr>
+
+</body>
+</html>
