@@ -1,0 +1,24 @@
+table#one {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+th#two { /* AUENTA A LARGURA DA TH OU TD*/
+  width: 40%; /* LAGRURA 40% */
+  padding: 12pt;
+}
+
+tr#three { /* AUENTA A ALTURA DE TR, TH ou TD */
+  height: 200px; /* ALTURA 200PX */
+}
