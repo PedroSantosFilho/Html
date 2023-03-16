@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>O Atributo method</title>
+
    <link rel="stylesheet" href="../estilo/style.css">
 
 </head>
@@ -36,24 +37,43 @@
          &lt;<mark>input</mark> type="submit" value="Submit">
       &lt;<mark>/form</mark>></pre>
    
-      <h3>Resultado do programa acima</h3>
-   
-      <form action="/action_page.php" target="_blank" method="get">
-         <label for="fname">Primeiro nome:</label><br>
-         <input type="text" id="fname" name="fname" value="John"><br>
-         
-         <label for="lname">Último nome:</label><br>
-         <input type="text" id="lname" name="lname" value="Doe"><br><br>
-   
-         <input type="submit" value="Submit">
-      </form>
+   <h3>Resultado do programa acima</h3>
 
-      <p>Depois de enviar, observe que os valores do formulário estão visíveis na barra de endereços da nova guia do navegador</p>
-
-      <p><mark>file:///C:/action_page.php?</mark><strong>fname=John&lname=Doe</strong></p>
+   <form action="/action_page.php" target="_blank" method="get">
+      <label for="fname">Primeiro nome:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
       
-      <hr>
-   
+      <label for="lname">Último nome:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
 
+      <input type="submit" value="Submit">
+   </form>
+
+   <p>Depois de enviar, observe que os valores do formulário estão visíveis na barra de endereços da nova guia do navegador</p>
+
+   <p><mark>file:///C:/action_page.php?</mark><strong>fname=John&lname=Doe</strong></p>
+   <hr>
+
+   <h3>Observações sobre GET:</h3>
+
+   <ul>
+      <li>Anexa os dados do formulário ao URL, em pares de nome/valor</li>
+      <li>NUNCA use GET para enviar dados confidenciais! (os dados do formulário enviado são visíveis na URL!)</li>
+      <li> O comprimento de um URL é limitado (2048 caracteres)</li>
+      <li>Útil para envios de formulários em que um usuário deseja marcar o resultado como favorito</li>
+      <li>GET é bom para dados não seguros, como strings de consulta no Google</li>
+   </ul>
+   
+   <h3>Observações sobre o POST:</h3>
+
+   <ul>
+      <li>Anexa os dados do formulário dentro do corpo da solicitação HTTP (os dados do formulário enviado não são mostrados na URL)</li>
+      <li>O POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados.</li>
+      <li>Os envios de formulário com POST não podem ser marcados</li>
+   </ul>
+
+   <p><mark>Dica:</mark> Sempre use POST se os dados do formulário contiverem informações <mark>confidenciais</mark> ou <mark>pessoais</mark>!</p>
+   <hr>
+   
 </body>
 </html>

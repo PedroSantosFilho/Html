@@ -36,7 +36,8 @@
       color: black;
       font-size: 15pt;
       margin-left: 80pt;
-      margin-right: 400pt;
+      margin-right: 300pt;
+      padding: 8px;
    }
    b {
       background-color: white;

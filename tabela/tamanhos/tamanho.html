@@ -5,12 +5,18 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Tamanho da Tabela</title>
-   
-   <link rel="stylesheet" href="style.css">
+
+   <!-- CONFIGURA O DOCUENTO-->
+   <link rel="stylesheet" href="../estilo/style.css">
+
+   <!-- CONFIGURA A PÁGINA -->
+   <link rel="stylesheet" href="tabela.css">
 
 </head>
 <body>
    <h1>Tamanhos de tabela HTML</h1>
+
+   <p><button type="button" onclick="document.location='/html/Html/tabela/bordasTabela/bordas.html'">BORDAS</button></p>
    
    <p>As tabelas HTML podem ter tamanhos diferentes para cada coluna, linha ou a tabela inteira.</p>
          
@@ -19,6 +25,7 @@
    <h2>Largura da tabela HTML</h2>
 
    <p>Para definir a largura de uma tabela, adicione a propriedade CSS <mark>width</mark>  ao elemento HTML <mark>tabel</mark>.</p>
+
    <pre>
    <mark>table</mark> {
       <mark>background-color</mark>: white; /* Cor do fundo branca */
@@ -28,6 +35,157 @@
    
    <p><mark>Nota:</mark> Usar uma porcentagem como a unidade de tamanho para uma largura significa quão largo esse elemento será comparado ao seu elemento pai, que neste caso é o elemento.&lt;<mark>body</mark>></p>
    <hr>
+
+   <pre>
+   Exemplo
+   Uma tabela HTML simples:
+   <b>&lt;table id="one"></b>
+      <b>&lt;tr></b>
+         <b>&lt;th></b>Company<b>&lt;/th></b>
+         <b>&lt;th></b>Contact<b>&lt;/th></b>
+         <b>&lt;th></b>Country<b>&lt;/th></b>
+      <b>&lt;/tr></b>
+      <b>&lt;tr></b>
+         <b>&lt;td></b>Alfreds Futterkiste<b>&lt;/td></b>
+         <b>&lt;td></b>Maria Anders<b>&lt;/td></b>
+         <b>&lt;td></b>Germany<b>&lt;/td></b>
+      <b>&lt;/tr></b>
+      <b>&lt;tr></b>
+         <b>&lt;td></b>Centro comercial Moctezuma<b>&lt;/td></b>
+         <b>&lt;td></b>Francisco Chang<b>&lt;/td></b>
+         <b>&lt;td></b>Mexico<b>&lt;/td></b>
+      <b>&lt;/tr></b>
+   <b>&lt;/table></b></pre>
+
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <table id="one">
+      <tr>
+         <th>Company</th>
+         <th>Contact</th>
+         <th>Country</th>
+      </tr>
+      <tr>
+         <td>Alfreds Futterkiste</td>
+         <td>Maria Anders</td>
+         <td>Germany</td>
+      </tr>
+      <tr>
+         <td>Centro comercial Moctezuma</td>
+         <td>Francisco Chang</td>
+         <td>Mexico</td>
+      </tr>
+   </table>
+   <hr>
+
+   <h2>Largura da Coluna da Tabela HTML</h2>	 	 
+ 	 	 
+   <p>Para definir a largura de uma coluna específica, na CSS, no seletor <b>th</b> ou <b>td</b> use a propriedade <mark>width</mark> com o valor em x%</p>
+
+   <pre>
+      Exemplo CSS
+      <b>th#two</b> {
+         <mark>width:</mark> 70%; /* LARGURA 70% */
+      }</pre>
+   <hr>
    
+   <pre>
+      Exemplo
+      Uma tabela HTML simples:
+      <b>&lt;table></b>
+         <b>&lt;tr></b>
+            <b>&lt;th></b>Company<b>&lt;/th></b>
+            <b>&lt;th</b> <mark>id="two"</mark>></b>Contact<b>&lt;/th></b>
+            <b>&lt;th></b>Country<b>&lt;/th></b>
+         <b>&lt;/tr></b>
+         <b>&lt;tr></b>
+            <b>&lt;td></b>Alfreds Futterkiste<b>&lt;/td></b>
+            <b>&lt;td></b>Maria Anders<b>&lt;/td></b>
+            <b>&lt;td></b>Germany<b>&lt;/td></b>
+         <b>&lt;/tr></b>
+         <b>&lt;tr></b>
+            <b>&lt;td></b>Centro comercial Moctezuma<b>&lt;/td></b>
+            <b>&lt;td></b>Francisco Chang<b>&lt;/td></b>
+            <b>&lt;td></b>Mexico<b>&lt;/td></b>
+         <b>&lt;/tr></b>
+      <b>&lt;/table></b></pre>
+   
+      <h3>Resultado do Exemplo Acima</h3>
+   
+      <table>
+         <tr>
+            <th>Company</th>
+            <th id="two">Contact</th>
+            <th>Country</th>
+         </tr>
+         <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+         </tr>
+         <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+         </tr>
+      </table>
+      <hr>
+ 
+      <h2>Altura da Coluna da Tabela HTML</h2>	 	 
+ 	 	 
+      <p>Para definir a altura de uma coluna específica, na CSS, no seletor <b>tr</b>, <b>th</b> ou <b>td</b> use a propriedade <mark>height</mark> com o valor em x%</p>
+   
+      <pre>
+         Exemplo CSS
+         <b>tr#three</b> {
+            <mark>height:</mark> 200px; /* altura da linha 40px */
+         }</pre>
+      <hr>
+      
+      <pre>
+         Exemplo
+         Uma tabela HTML simples:
+         <b>&lt;table></b>
+            <b>&lt;tr></b>
+               <b>&lt;th></b>Company<b>&lt;/th></b>
+               <b>&lt;th</b>></b>Contact<b>&lt;/th></b>
+               <b>&lt;th></b>Country<b>&lt;/th></b>
+            <b>&lt;/tr></b>
+            <b>&lt;tr <mark>id="three"</mark>></b>
+               <b>&lt;td></b>Alfreds Futterkiste<b>&lt;/td></b>
+               <b>&lt;td></b>Maria Anders<b>&lt;/td></b>
+               <b>&lt;td></b>Germany<b>&lt;/td></b>
+            <b>&lt;/tr></b>
+            <b>&lt;tr></b>
+               <b>&lt;td></b>Centro comercial Moctezuma<b>&lt;/td></b>
+               <b>&lt;td></b>Francisco Chang<b>&lt;/td></b>
+               <b>&lt;td></b>Mexico<b>&lt;/td></b>
+            <b>&lt;/tr></b>
+         <b>&lt;/table></b></pre>
+      
+         <h3>Resultado do Exemplo Acima</h3>
+      
+         <table>
+            <tr>
+               <th>Company</th>
+               <th>Contact</th>
+               <th>Country</th>
+            </tr>
+            <tr id="three">
+               <td>Alfreds Futterkiste</td>
+               <td>Maria Anders</td>
+               <td>Germany</td>
+            </tr>
+            <tr>
+               <td>Centro comercial Moctezuma</td>
+               <td>Francisco Chang</td>
+               <td>Mexico</td>
+            </tr>
+         </table>
+         <hr>
+      
+   <p><button type="button" onclick="document.location='/html/Html/tabela/bordasTabela/bordas.html'">BORDAS</button></p>
+   <hr>
+
 </body>
 </html>
