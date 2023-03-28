@@ -74,7 +74,7 @@
    label {
       font-size: 25px;
    }
-   p#obs {
+   p.obs {
       background-color: yellow;
       color: black;
    }
@@ -82,4 +82,8 @@
       border: 1px solid black;
       padding: 5px;
       font-size: 15px;
+   }
+
+   div.obs {
+      background-color: #ffffcc;
    }
