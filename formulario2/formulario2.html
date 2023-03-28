@@ -75,27 +75,20 @@
    
    <pre>
    &lt;<mark>form</mark>>
-      &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+      &lt;<mark>label</mark> <b>for="fname1"</b>>Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
       
-      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname"</b>> name="fname" value="Pedro">&lt;<mark>br</mark>>
+      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname1"</b> name="fname" value="Pedro">&lt;<mark>br</mark>>
       
       &lt;<mark>label</mark> <b>for="lname"</b>>Último nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
       
       &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="lname"</b> name="lname" value="Filho">
    &lt;<mark>/form</mark>></pre>
 
-   <p id="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
+   <p><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
 
    <p>É assim que o código HTML acima será exibido em um navegador:</p>
    
-   <form>
-      <label for="fname">Primeiro nome:</label><br>
-      <input type="text" id="fname" name="fname" value="Pedro"><br>
-      <label for="lname">Último nome:</label><br>
-      <input type="text" id="lname" name="lname" value="Filho">
-   </form>
-
-   <p><mark>Nota:</mark> A forma em si não é visível. Observe também que a largura padrão de um campo de entrada é de 20 caracteres.</p>
+   <p><strong>Nota:</strong> A forma em si não é visível. Observe também que a largura padrão de um campo de entrada é de 20 caracteres.</p>
    <hr>
 
    <h2>O elemento &lt;<mark>label</mark>></h2>
@@ -131,7 +124,7 @@
       &lt;<mark>label</mark> <b>for="javascript"</b>>JavaScript&lt;<mark>/label</mark>>
    &lt;<mark>/form</mark>></pre>
 
-   <p id="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
+   <p class="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
 
    <p>É assim que o código HTML acima será exibido em um navegador:</p>
 
@@ -171,7 +164,7 @@
       &lt;<mark>label</mark> <b>for="vehicle3"</b>>Eu tenho um barco&lt;<mark>/label</mark>>
    &lt;<mark>/form</mark>></pre>
 
-   <p id="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
+   <p class="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
 
    <p>É assim que o código HTML acima será exibido em um navegador:</p>
    
@@ -201,9 +194,9 @@
    
    <pre>
    &lt;<mark>form</mark> <code>action="/action_page.php"</code>>
-      &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>><br>
+      &lt;<mark>label</mark> <b>for="fname2"</b>>Primeiro nome:&lt;<mark>/label</mark>><br>
       
-      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname"</b> name="fname" value="John"><br>
+      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname2"</b> name="fname" value="John"><br>
       
       &lt;<mark>label</mark> <b>for="lname"</b>>Último nome:&lt;<mark>/label</mark>><br>
       
@@ -213,13 +206,13 @@
    &lt;<mark>/form</mark>>
    </pre>
 
-   <p id="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
+   <p class="obs"><strong>Importante:</strong> O  atributo <mark>for</mark> da tag &lt;<mark>label</mark>> deve ser igual ao atributo <mark>Id</mark> do elemento &lt;<mark>input</mark>> para uni-los.</p>
 
    <p>É assim que o código HTML acima será exibido em um navegador:</p>
    
    <form action="/action_page.php">
-      <label for="fname">Primeiro nome:</label><br>
-      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="fname2">Primeiro nome:</label><br>
+      <input type="text" id="fname2" name="fname" value="John"><br>
       <label for="lname">Último nome:</label><br>
       <input type="text" id="lname" name="lname" value="Doe"><br><br>
       <input type="submit" value="Submit">
@@ -241,9 +234,9 @@
    <pre>
    Este exemplo não enviará o valor do campo de entrada "Nome": 
    &lt;<mark>form</mark> <code>action="/action_page.php"</code>>
-      &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
+      &lt;<mark>label</mark> <b>for="fname2"</b>>Primeiro nome:&lt;<mark>/label</mark>>&lt;<mark>br</mark>>
       
-      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname"</b> value="Pedro">&lt;<mark>br</mark>>&lt;<mark>br</mark>>
+      &lt;<mark>input</mark> <strong>type="text"</strong> <b>id="fname2"</b> value="Pedro">&lt;<mark>br</mark>>&lt;<mark>br</mark>>
       
       &lt;<mark>input</mark> <strong>type="submit"</strong> value="Submit">
    &lt;<mark>/form</mark>></pre>
@@ -251,9 +244,9 @@
    <p>Resultado do programa acima</p>
 
    <form action="/action_page.php">
-      <label for="fname">Primeiro nome:</label><br>
+      <label for="fname3">Primeiro nome:</label><br>
 
-      <input type="text" id="fname" value="Pedro"><br><br>
+      <input type="text" id="fname3" value="Pedro"><br><br>
 
       <input type="submit" value="Submit">
    </form>
