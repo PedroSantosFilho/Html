@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Atributos do Input HTML</title>
+
+   <link rel="stylesheet" href="../estilo/style.css">
+
+</head>
+<body>
+   <h1>Atributos do Input HTML</h1>
+   
+   <h2>O atributo de valor <mark>value</mark></h2>
+
+   <p>O atributo de entrada <mark>value</mark> especifica um valor inicial para um campo de entrada:</p>
+
+   <pre>
+   Exemplo
+   Campos de entrada com valores iniciais (padrão):
+   &lt;<mark>form</mark>>
+      &lt;<mark>label</mark> <b>for="fname1"</b>>Primeiro nome:&lt;<mark>/label</mark>>
+      &lt;<mark>input</mark> type="text" <b>id="fname1"</b> name="fname" <strong>value="John"</strong>>
+
+      &lt;<mark>label</mark> <b>for="lname1"</b>>Último nome:&lt;<mark>/label</mark>>
+      &lt;<mark>input</mark> type="text" <b>id="lname1"</b>> name="lname" <strong>value="Doe"</strong>>
+
+      &lt;<mark>input</mark> type="submit" value="Enviar"> 
+   &lt;<mark>/form</mark>>
+   </pre>
+
+   <h3>Resultado do Exemplo Acima</h3>
+   
+   <form>
+      <label for="fname1">Primeiro nome:</label><br>
+      <input type="text" id="fname1" name="fname" value="John"><br>
+
+      <label for="lname1">Último nome:</label><br>
+      <input type="text" id="lname1" name="lname" value="Doe"><br><br>
+
+      <input type="submit" value="Enviar">
+   </form>
+   <hr>
+
+   <h2>O atributo somente leitura <mark>readonly</mark></h2>
+
+   <p>O <mark>readonly</mark> atributo input, especifica que um campo de entrada é somente de leitura.</p>
+
+   <p>Um campo de entrada somente de leitura não pode ser modificado (no entanto, um usuário pode acessá-lo, realçá-lo e copiar o texto dele).</p>
+
+   <p>O valor de um campo de entrada somente leitura <mark>readonly</mark> será enviado ao enviar o formulário!</p>
+
+   <pre>   
+   Exemplo
+   Um campo de entrada somente leitura:
+   &lt;<mark>form</mark>>
+      &lt;<mark>label</mark> <b>for="fname"</b>>Primeiro nome:&lt;<mark>/label</mark>>
+      &lt;<mark>input</mark> type="text" <b>id="fname"</b> name="fname" value="John" 
+            <strong>readonly</strong>>
+
+      &lt;<mark>label</mark> <b>for="lname"</b>>Último nome:&lt;<mark>/label</mark>>
+      &lt;<mark>input</mark> type="text" <b>id="lname"</b>> name="lname" <strong>value="Doe"</strong>>
+
+      &lt;<mark>input</mark> type="submit" value="Enviar">
+
+   &lt;<mark>/form</mark>>
+   </pre>
+
+   <h3>Resultado do Exemplo Acima</h3>
+   
+   <form>
+      <label for="fname2">Primeiro nome:</label><br>
+      <input type="text" id="fname2" name="fname" value="John" readonly ><br>
+
+      <label for="lname2">Último nome:</label><br>
+      <input type="text" id="lname2" name="lname" value="Doe"><br><br>
+
+      <input type="submit" value="Enviar">
+   </form>
+
+   <hr>
+
+   <h2>O atributo desabilitado <mark>disabled</mark></h2>
+
+   <p>O <mark>disabled</mark> atributo de entrada especifica que um campo de entrada deve ser desabilitado.</p>
+
+   <p>Um campo de entrada desabilitado é inutilizável e não clicável.</p>
+
+   <p>O valor de um campo de entrada desativado não será enviado ao enviar o formulário!</p>
+
+   <pre>   
+   Exemplo
+   Um campo de entrada desabilitado:
+   &lt;<mark>form</mark>>
+      &lt;<mark>label</mark> <b>for="fname2"</b>>Primeiro nome:&lt;<mark>/label</mark>>
+      &lt;<mark>input</mark> type="text" <b>id="fname2"</b> name="fname" value="John" 
+            <strong>disabled</strong>>
+
+      &lt;<mark>label</mark> <b>for="lname2"</b>>Último nome:&lt;<mark>/label</mark>>
+      &lt;<mark>input</mark> type="text" <b>id="lname2"</b>> name="lname" <strong>value="Doe"</strong>>
+
+      &lt;<mark>input</mark> type="submit" value="Enviar">
+   &lt;<mark>/form</mark>>
+   </pre>
+
+   <h3>Resultado do Exemplo Acima</h3>
+   
+   <form>
+      <label for="fname3">Primeiro nome:</label><br>
+      <input type="text" id="fname3" name="fname" value="John" disabled ><br>
+
+      <label for="lname3">Último nome:</label><br>
+      <input type="text" id="lname3" name="lname" value="Doe"><br><br>
+
+      <input type="submit" value="Enviar">
+   </form>
+
+   <hr>
+
+   <h2>O atributo tamanho <mark>size</mark></h2>
+
+   <p>O <mark>size</mark> atributo de entrada especifica a largura visível, em caracteres, de um campo de entrada.</p>
+
+   <p>O valor padrão para sizeé 20.</p>
+
+   <p><strong>Observação:</strong> o <mark>size</mark> atributo funciona com os seguintes tipos de entrada: texto, pesquisa, tel, url, email e senha.</p>
+
+   <pre>   
+   Exemplo
+   Define uma largura para um campo de entrada:
+   &lt;<mark>form</mark>>
+   &lt;<mark>label</mark> <b>for="fname4"</b>>Primeiro nome:&lt;<mark>/label</mark>>
+   &lt;<mark>input</mark> type="text" <b>id="fname4"</b> name="fname" value="John" 
+         <strong>size="50"</strong>>
+
+   &lt;<mark>label</mark> <b>for="lname4"</b>>Último nome:&lt;<mark>/label</mark>>
+   &lt;<mark>input</mark> type="text" <b>id="lname4"</b>> name="lname" value="Doe" <strong>size="4"</strong>>
+
+   &lt;<mark>input</mark> type="submit" value="Enviar">
+   &lt;<mark>/form</mark>>
+   </pre>
+
+   <h3>Resultado do Exemplo Acima</h3>
+   
+   <form>
+      <label for="fname4">Primeiro nome:</label><br>
+      <input type="text" id="fname4" name="fname" value="John" size="50" ><br>
+
+      <label for="lname4">Último nome:</label><br>
+      <input type="text" id="lname4" name="lname" value="Doe" size="4"><br><br>
+
+      <input type="submit" value="Enviar">
+   </form>
+
+   <hr>
+   
+</body>
+</html>
