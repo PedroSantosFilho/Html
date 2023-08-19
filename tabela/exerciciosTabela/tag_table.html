@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Define Uma Tabela Html</title>
+
+   <style>
+      /* CSS DA TABELA COm BORDAS */
+      .comBorda {
+         border: 1px solid black;
+         text-align: center;
+      }
+
+      /* CSS DA TABELA SEm BORDA */
+      table, th, td {
+         text-align: center;
+      }
+      table:hover { /* Ao passar o mause pela tabela*/
+         background-color: red; /* o fundo fica vermelho */
+         color: white; /* e as letras vicam brancas */ 
+      }
+   </style>
+
+</head>
+<body>
+   <h1>Define Uma Tabela Html</h1>
+
+   <p>Uma tabela em Html consiste de células dentro de linhas e colunas.</p>
+
+   <p>Cada célula da tabela é definida por uma tag de abertura &lt;<ins>td</ins>> e uma tag de fechamento &lt;<ins>/tag</ins>>.</p>
+
+   <h3>Exemplo de Tabela Simples SEM Borda</h3>
+
+   <p>Tabela com <strong>text-align: center;</strong> alinhada ao centro <mark>sem</mark> bordas.</p>
+
+   <table>
+      <thead>
+         <th>Nome</th>
+         <th>Sobrenome</th>
+         <th>Idade</th>
+      </thead>
+
+      <tbody>
+         <tr>
+            <td>Pedro</td>
+            <td>Santos Filho</td>
+            <td>59</td>
+         </tr>
+
+         <tr>
+            <td>Cleonice</td>
+            <td>Morais J. Santos</td>
+            <td>57</td>
+         </tr>
+
+         <tr>
+            <td>Tatiane</td>
+            <td>Morais de J. Santos</td>
+            <td>32</td>
+         </tr>
+      </tbody>
+      
+   </table>
+   <hr>
+
+   <h3>Exemplo de Tabela Simples Com Borda</h3>
+
+   <p>Tabela com <strong>text-align: center;</strong> o texto alinhado ao centro <mark>com</mark> bordas.</p>
+
+   <p>Para colocar bordas na tabela usa-se a propriedade CSS <strong>border</strong> dentro da tag Html <strong>style</strong></p>
+
+   <table class="comBorda">
+      <thead>
+         <tr>
+            <th class="comBorda">Nome</th>
+            <th class="comBorda">Sobrenome</th>
+            <th class="comBorda">Idade</th>
+         </tr>
+      </thead>
+
+      <tbody>
+         <tr>
+            <td class="comBorda">Pedro</td>
+            <td class="comBorda">Santos Filho</td>
+            <td class="comBorda">59</td>
+         </tr>
+
+         <tr>
+            <td class="comBorda">Cleonice</td>
+            <td class="comBorda">Morais de Jesus dos Santos</td>
+            <td class="comBorda">57</td>
+         </tr>
+
+         <tr>
+            <td class="comBorda">Tatiane</td>
+            <td class="comBorda">Morais de J. Santos</td>
+            <td class="comBorda">32</td>
+         </tr>
+      </tbody>
+   </table>
+   <hr>
+
+   <footer>
+      <p>&copy; W3schools</p>
+   </footer>
+   <hr>
+
+</body>
+</html>
