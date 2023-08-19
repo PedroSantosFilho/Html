@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tipos de Cabeçalhos da Tabela</title>
+
+   <style>
+      .comBorda {
+         text-align: center;
+         border: 1px solid black;
+         border-collapse: collapse;
+         padding: 5px;
+      }
+
+      .esquerda {
+         text-align: left;
+      }
+   </style>
+
+</head>
+<body>
+   <header>
+      <h1>Tipos de Cabeçalhos da Tabela</h1>
+
+      <p>Exercício: colocar o cabeçalho da tabela na linha e em coluna.</p>
+   </header>
+   <hr>
+
+   <main>
+      <h2>Cabeçalho da Tabela em Linha</h2>
+
+      <p>Exemplo de Cabeçalho em linha, o Nome, o Sobrenome e Idade estão na mesma linha.</p>
+
+      <table class="comBorda">
+         <thead>
+            <th class="comBorda">Nome</th>
+            <th class="comBorda">Sobrenome</th>
+            <th class="comBorda">Idade</th>
+         </thead>
+
+         <tbody>
+            <tr>
+               <td class="comBorda">Pedro</td>
+               <td class="comBorda">Santos Filho</td>
+               <td class="comBorda">59</td>
+            </tr>
+
+            <tr>
+               <td class="comBorda">Cleonice</td>
+               <td class="comBorda">Morais de Jesus dos Santos</td>
+               <td class="comBorda">57</td>
+            </tr>
+
+            <tr>
+               <td class="comBorda">Tatiane</td>
+               <td class="comBorda">Morais de J. Santos</td>
+               <td class="comBorda">32</td>
+            </tr>
+         </tbody>
+      </table>
+      <hr>
+
+      <h2>Cabeçalho da Tabela na Coluna</h2>
+
+      <p>Exemplo de Cabeçalho na Coluna, o Nome, o Sobrenome e Idade estão na mesma coluna.</p>
+
+      <table class="comBorda">
+         <tbody>
+            <tr>
+               <th class="comBorda esquerda">Nome</th>
+               <td class="comBorda">Pedro</td>
+               <td class="comBorda">Cleonice</td>
+               <td class="comBorda">Tatiane</td>
+            </tr>
+            <tr>
+               <th class="comBorda esquerda">Sobrenome</th>
+               <td class="comBorda">Santos Filho</td>
+               <td class="comBorda">Morais J. Santos</td>
+               <td class="comBorda">Rainé Morais J. Santos</td>
+            <tr>
+               <th class="comBorda esquerda">Idade</th>
+               <td class="comBorda">59</td>
+               <td class="comBorda">57</td>
+               <td class="comBorda">32</td>
+            </tr>
+         </tbody>
+      </table>
+      <hr>
+
+   </main>
+   <hr>
+
+   <footer>
+      &copy; W3schools
+   </footer>
+   <hr>
+
+</body>
+</html>
